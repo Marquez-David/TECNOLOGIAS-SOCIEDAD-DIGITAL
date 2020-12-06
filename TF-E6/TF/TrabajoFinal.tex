@@ -1,0 +1,73 @@
+%archivos de configuracion del trabajo
+\input{../Config/preamble.tex} 
+\input{../Config/myconfig.tex}  
+\input{../Config/postamble.tex}  
+
+% directorios donde se guardaran las imagenes, diagramas, figuras...
+\graphicspath{{../Book/figures/}{../Book/diagrams/}{../Book/photos/}} 
+
+% "portada" inicial
+\title{Trabajo Final de Tecnologías para la Sociedad Digital}
+\date{31 de Diciembre de 2020}
+
+\begin{document} 
+\input{../Config/setlanguagedependentissues.tex}
+
+
+\maketitle
+\begin{description}                              
+\item[Título:] Ciberseguridad            
+  \ifthenelse{\equal{\mybooklanguage}{english}}   
+  {                                             
+  \item[Título en inglés:] \mybooktitleenglish    
+  }                                     
+  {                                              
+  }                                             
+\item[Equipo:] Equipo de trabajo número 6  
+\item[\expandafter\makefirstuc\expandafter{\mybookAutorOrAutora}:] Carlos Yanguas Durán, Alberto Larena Luengo, David Márquez Mínguez       
+\item[\expandafter\makefirstuc\expandafter{\mybookTutorOrTutores}:] Jesús Alpuente Hermosilla      
+\end{description}                          
+
+%comienza el trabajo
+%he puesto los contenidos minimos que hay que hacer, podemos annadir mas secciones
+
+\section{Introducción}
+\label{sec:introduccion}
+
+
+\section{Vulnerabilidades y ataques en los sistemas informáticos}
+\label{sec:vulneravilidades-y-ataques}
+
+
+\section{Sistemas de riesgo}
+\label{sec:sistemas-de-riesgo}
+
+
+\section{Ciberataques y sus consecuencias}
+\label{sec:ciberataques-y-consecuencias}
+
+
+\section{Planificación de respuesta a incidentes}
+\label{sec:planificacion-de-respuesta}
+
+
+\section{Protección informática}
+\label{sec:proteccion-informatica}
+
+
+\section{Sistemas utilizados para mantener la seguridad y la privacidad}
+\label{sec: tipos-sistemas}
+
+En primer lugar.\cite{rstudio}.
+
+
+
+
+
+
+% fin del trabajo
+%se incluye el archivo de biobliografia
+\input{../Book/biblio/bibliography.tex}
+
+\end{document}
+
