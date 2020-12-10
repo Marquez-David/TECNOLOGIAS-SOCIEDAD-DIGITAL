@@ -1,0 +1,40 @@
+Comandos basicos latex:
+
+1.- Introducir una referencia.
+	Paso 1: Abrir a ../Book/biblio/biblio
+	Paso 2: Copiar, pegar y modificar una de las referencias ya creadas segun lo que queramos referencia, pagina web, libro...
+	Paso 3: Asegurarnos de que hemos modificadoe l nombre de la referencia importante! Si no da error.
+	Paso 4: Annadir la referencia en el trabajo con el comando \cite{nombre-referencia}
+
+2.- Crear una enumeracion
+	Paso 1: Introducir \begin{enumerate}
+	Paso 2: Cada cosa que queramos enumerar debera empezar por \item
+	Paso 3: Cuando terminemos de enumerar \end{enumerate}
+
+2.- Crear una itemizacion(enumeracion pero con puntos en vez de con numeros)
+	Paso 1: Introducir \begin{itemize}
+	Paso 2: Cada cosa que queramos itemizar \item 
+	Paso 3: Cunado acabemos de itemizar \end{itemize}
+
+*Podemos combinar enumeraciones e itemizaciones, ejemplo: *
+\begin{enumerate}
+\item Fase de inicialización del trabajo:
+  \begin{itemize}
+  \item Determinación del contenido del proyecto.
+  \item Análisis de las herramientas necesarias para el desarrollo del trabajo.
+  \end{itemize}
+\end{enumerate}
+
+3.- Introducir una imagen:
+	Paso 1: Introducir lo siguiente
+		\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=4in]{nombre-imagen.jpg}
+  		   \caption{Texto que queramos poner dejado de la imagen.}
+  		   \label{img:Nombre-referencia}
+		\end{figure}
+	Paso 2: Cunado queramos hacer referencia a una imagen \ref{img:Nombre-referencia}
+
+4.- Referenciar una seccion:
+	Paso 1: Introducir donde queramos poner la referencia \ref{sec:nombre-seccion}
+	
