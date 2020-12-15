@@ -6,35 +6,52 @@
 % directorios donde se guardaran las imagenes, diagramas, figuras...
 \graphicspath{{../Book/figures/}{../Book/diagrams/}{../Book/photos/}} 
 
+\begin{document} 
 % "portada" inicial
 \title{Trabajo Final de Tecnologías para la Sociedad Digital}
 \date{31 de Diciembre de 2020}
-
-\begin{document} 
-\input{../Config/setlanguagedependentissues.tex}
-
-
-\maketitle
-\begin{description}                              
-\item[Título:] Ciberseguridad            
-  \ifthenelse{\equal{\mybooklanguage}{english}}   
-  {                                             
-  \item[Título en inglés:] \mybooktitleenglish    
-  }                                     
-  {                                              
-  }                                             
-\item[Equipo:] Equipo de trabajo número 6  
-\item[\expandafter\makefirstuc\expandafter{\mybookAutorOrAutora}:] Carlos Yanguas Durán, Alberto Larena Luengo, David Márquez Mínguez       
-\item[\expandafter\makefirstuc\expandafter{\mybookTutorOrTutores}:] Jesús Alpuente Hermosilla      
-\end{description}                          
+\author{}
 
 %comienza el trabajo
 %he puesto los contenidos minimos que hay que hacer, podemos annadir mas secciones
 
-\section{Introducción}
-\label{sec:introduccion}
 
-Esddvdfvdf \cite{ejemplo} edefvd Holaghnghng.
+\input{../Config/setlanguagedependentissues.tex}
+
+\maketitle
+\begin{description}                                                      
+\item[Equipo:] Equipo de trabajo número 6  
+\item[\expandafter\makefirstuc\expandafter{\mybookAutorOrAutora}:] Carlos Yanguas Durán, Alberto Larena Luengo, David Márquez Mínguez   
+\item[\expandafter\makefirstuc\expandafter{\mybookTutorOrTutores}:] Jesús Alpuente Hermosilla      
+\end{description}  
+
+
+%-------------------------------------------RESUMEN------------------------------------------------------------------------------------
+\begin{center}
+\section*{Resumen}
+\label{cha:resumen}
+\addcontentsline{toc}{chapter}{Resumen}
+\end{center}
+
+Aqui va el resumen
+
+
+                  
+
+
+
+%-------------------------------------------INDICE: SE VA HACIENDO SOLO------------------------------------------------------------------------------------
+\input{indice.tex}
+\hypersetup{linkcolor=blue}
+
+                        
+%-------------------------------------------PARTE 1------------------------------------------------------------------------------------
+
+\chapter{Introducción}
+\label{cha:introduccion}
+
+
+Esddvdfvdf \cite{ejemplo} edefvd Holaghnghng holaá.
 
 Este texto estara sangrado.
 
@@ -45,32 +62,47 @@ Este texto estara sangrado.
   \label{img:imagen-ejemplo}
 \end{figure}
 
-Referencio la imagen \ref{img:imagen-ejemplo}, ahora referencio una seccion \ref{sec:tipos-sistemas}
+Referencio la imagen \ref{img:imagen-ejemplo}, ahora referencio una seccion \ref{cha:tipos-sistemas}
 
 
-\section{Vulnerabilidades y ataques en los sistemas informáticos}
-\label{sec:vulneravilidades-y-ataques}
+%-------------------------------------------PARTE 2------------------------------------------------------------------------------------
+\chapter{Vulnerabilidades y ataques en los sistemas informáticos}
+\label{cha:vulneravilidades-y-ataques}
+
+\section{Incluyo una nueva seccion}
+\label{sec:prueba}
+sdfsdfgsdpruebaaa
 
 
 
-\section{Sistemas de riesgo}
-\label{sec:sistemas-de-riesgo}
+%-------------------------------------------PARTE 3------------------------------------------------------------------------------------
+\chapter{Sistemas de riesgo}
+\label{cha:sistemas-de-riesgo}
 
 
-\section{Ciberataques y sus consecuencias}
-\label{sec:ciberataques-y-consecuencias}
 
 
-\section{Planificación de respuesta a incidentes}
-\label{sec:planificacion-de-respuesta}
+%-------------------------------------------PARTE 4-----------------------------------------------------------------------------------
+\chapter{Ciberataques y sus consecuencias}
+\label{cha:ciberataques-y-consecuencias}
 
 
-\section{Protección informática}
-\label{sec:proteccion-informatica}
+
+%-------------------------------------------PARTE 5------------------------------------------------------------------------------------
+\chapter{Planificación de respuesta a incidentes}
+\label{cha:planificacion-de-respuesta}
 
 
-\section{Sistemas utilizados para mantener la seguridad y la privacidad}
-\label{sec:tipos-sistemas}
+
+%-------------------------------------------PARTE 6------------------------------------------------------------------------------------
+\chapter{Protección informática}
+\label{cha:proteccion-informatica}
+
+
+
+%-------------------------------------------PARTE 6------------------------------------------------------------------------------------
+\chapter{Sistemas utilizados para mantener la seguridad y la privacidad}
+\label{cha:tipos-sistemas}
 
 En primer lugar.\cite{rstudio}. holaaa
 
