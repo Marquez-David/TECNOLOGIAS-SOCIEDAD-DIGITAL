@@ -37,4 +37,19 @@ Comandos basicos latex:
 
 4.- Referenciar una seccion:
 	Paso 1: Introducir donde queramos poner la referencia \ref{sec:nombre-seccion}
-	
+
+5.- Citas
+	5.1-Citas cortas: "Es que la genética es una ciencia exacta." (\citeauthor{Coulouris}, \citeyearNP{Coulouris}: 10).
+	5.2-Citas largas:  
+\begin{center}
+    \begin{minipage}{0.9\linewidth}
+        \vspace{5pt}%margen superior de minipage
+        {\small
+            La desventaja principal de esta práctica, es que la víctima no sólo tiene que ejecutar el \textit{backdoor} sino que también cambiar los permisos de dicho archivo para ser ejecutable, y por si fuera poco, el \textit{backdoor} debe de estar en ejecución durante el ataque, si el proceso se termina la conexión se desactiva.
+        }
+        \begin{flushright}
+            (\citeauthor{Coulouris}, \citeyearNP{Coulouris}: 10)
+        \end{flushright}
+        \vspace{5pt}%margen inferior de la minipage
+    \end{minipage}
+\end{center}
