@@ -69,15 +69,176 @@ Referencio la imagen \ref{img:imagen-ejemplo}, ahora referencio un capitulo \ref
 \chapter{Vulnerabilidades y ataques en los sistemas informáticos}
 \label{cha:vulneravilidades-y-ataques}
 
-\section{Incluyo una nueva seccion}
-\label{sec:prueba}
-sdfsdfgsdpruebaaa
+
+\begin{quote}
+
+\small Una vulnerabilidad en términos informáticos es una debilidad o fallo en un sistema de información, como puede ser una aplicación o un servicio web, que permite a un atacante comprometer la integridad (capacidad que tiene un sistema de información para garantizar que los datos no han sido modificados desde su creación sin autorización, asegurando que la información es válida y consistente), disponibilidad (capacidad de un sistema de información para garantizar que el este no va a sufrir caídas y que por tanto, el sistema y los datos van a  estar disponibles al usuario en todo momento.) o confidencialidad (capacidad de un sistema de información de garantizar que la información almacenada o transmitida por la red, solamente va a estar disponibles para aquellas personas autorizadas a la misma.).\cite{incibe},\cite{infosegur} 
+
+\end{quote}
+
+\subsection{Vulnerabilidades y ataques más recurrentes:}
+\begin{enumerate}
+\item {\bfseries Vulnerabilidad Zero Day:}
+son aquellas vulnerabilidades que acaban de ser descubiertas, y que por tanto, no tienen un parche que las solucione.
+El principal problema de este tipo de vulnerabilidades es que desde que se descubre hasta que se lanza un parche correctivo y los usuarios lo instalan en sus equipos, los atacantes tienen vía libre para explotarla y sacar provecho de esta.
+Existen varios ejemplos de este tipo de vulnerabilidad, por ejemplo el ransomware(programa de software malicioso que llega a bloquear la pantalla de una computadora o cifrar archivos importantes con contraseña, tiene como objetivo el exigir un pago para restablecer el funcionamiento del sistema que contiene el mismo.) que afectó a multitud de equipos a partir del 2017.
+Algunas empresas importantes, para tratar de evitar este tipo de vulnerabilidades que suelen producirse a menudo en software recientemente desarrollado, es hacer concursos invitando a grandes  expertos en ciberseguridad, ofreciendo grandes recompensas a aquellos que descubran y resuelvan posibles vulnerabilidades que tenga dicho software.
+
+\item {\bfseries Error en la gestión de recursos:}
+Este tipo de vulnerabilidad ocurre cuando no se tiene un control acerca de la gestión de recursos que puede utilizar un sistema de información, permitiendo que este consuma un exceso de recursos afectando a la disponibilidad de estos.
+Un ejemplo típico de explotación de esta vulnerabilidad es el exigir constantemente recursos del sistema de información, cediendo la mayoría de estos a un único usuario, ralentizando o impidiendo el uso de esta al resto de usuarios.
+
+\item {\bfseries Validación de entrada:}
+Esta vulnerabilidad ocurre cuando no se tiene un control acerca de los datos que pueden entrar en el sistema de información.
+Entre los ataques que explotan esta vulnerabilidades nos encontramos con los ya conocidos SQL injection, que consiste en insertar código SQL malicioso en la base de datos de la víctima forzando a la base de datos a ejecutar dicha sentencia.
+Entre los daños principales que pueden llegar a causar este tipo de ataques nos encontramos con la destrucción de tablas o la extracción de información privada como contraseñas.
+
+\item {\bfseries Permisos, privilegios y/o control de acceso:}
+Esta vulnerabilidad ocurre cuando no se tiene un control acerca de los privilegios o permisos que se les dan a los usuarios.
+En varias ocasiones, las empresas han sufrido ataques ayudados o llevados a cabo por sus propios empleados causados de manera consentida o no.
+Si se les dan permisos a todos los empleados de la empresa por igual, podría ocurrir que algún empleado realizase acciones que causasen grandes daños irreversibles para la misma.
+Por ejemplo, algún empleado trabajando en bases de datos, podría sin querer eliminar algunos datos relevantes para la misma al introducir mal alguna instrucción.
+También ocurre frecuentemente que no todas las partes del sistema de información tienen el mismo nivel de ciberseguridad, por tanto, si se distribuye por igual los permisos o privilegios entre las diferentes partes de esta, será atacada por el punto más vulnerable.
+
+\item {\bfseries Vulnerabilidad de Cross Site Scripting(XSS): }
+Esta vulnerabilidad sucede cuando es posible ejecutar scripts de lenguajes como JavaScript.
+Consiste en la suplantación de un sitio web verdadero por otro que no lo es, pero que a nivel visual es idéntico al original.
+El ataque más conocido que aprovecha esta vulnerabilidad es el denominado Phising, que consiste en la obtención de los datos de los usuarios introducidos por ellos mismos.
+Un ejemplo frecuente de este tipo de ataques, se da a través de los emails, al usuario le llega un correo con una URL[5] que tiene un nombre semejante al nombre de su banco, el usuario al abrir el link se encuentra con un aspecto idéntico al de su banco habitual, por lo que introduce los datos, seguidamente estos datos son almacenados por el creador de dicho ataque y le redirige a la página web oficial introduciéndole los datos aportados por el usuario, de esta manera el usuario no sospecha que pueda ser algún tipo de ataque, ya que todo parece haber resultado con normalidad.
+
+\end{enumerate}
+
+\subsection{Clasificación de vulnerabilidades según gravedad y dificultad de tratamiento:}
+\begin{enumerate}
+\item {\bfseries Gravedad baja: }
+Representa aquellas vulnerabilidades que tienen un impacto mínimo y que no presentan problemas para reducir este. En muchas ocasiones este tipo de vulnerabilidades no son tratadas, ya que puede ocurrir que implantar el sistema de seguridad para cubrir las mismas, sea más caro que cubrir las consecuencias de los ataques producidos por esta.
+\item {\bfseries Gravedad media: }
+En este nivel se incluyen aquellas vulnerabilidades que son fáciles de solucionar pero que representan un impacto medio, normalmente pueden ser eliminadas mediante auditorías o configuraciones que se han establecido previamente en otros sistemas.
+\item {\bfseries Gravedad de gran importancia:}
+En este grupo se incluyen aquellas vulnerabilidades que pueden ser explotadas produciendo un ataque rápido y de gran impacto sobre el sistema informático, normalmente este tipo de ataques tienen como objetivo buscar la pérdida de confidencialidad e integridad de los datos o recursos, además no suelen tener una solución previamente implantada.
+\item {\bfseries Gravedad crítica: }
+Es el grupo de vulnerabilidades que conllevan mayores consecuencias al sistema. El ataque sobre este tipo de vulnerabilidad conlleva normalmente problemas no solo para el equipo a través del cual se descubre la vulnerabilidad, sino que lo expande por toda la red al que está conectado. Son ataques difíciles de detectar y que además, no necesitan que el usuario lleve a cabo algún tipo de acción para poder cumplir con su objetivo.
+\end{enumerate}
+Este tipo de vulnerabilidades son imprescindibles que sean cubiertas por el equipo de ciberseguridad.
+
+Como conclusión sobre este tema, es importante destacar, que los ordenadores personales normalmente no sufren ataques pese a tener algún tipo de vulnerabilidad, ya que resulta complicado obtener información lo suficientemente valiosa como para pedir un rescate por el mismo, o este no puede ser igual de cuantioso que el exigido a una empresa, por lo que en la mayoría de los casos es suficiente con tener las actualizaciones del sistema operativo y del antivirus al día para hacer frente a los más habituales.
+En el caso de las empresas, sin embargo, es común tener un área destinada específicamente destinada a la ciberseguridad, ya que se tratan con datos sensibles(Son aquellos datos que están sujetos a condiciones de tratamiento específicas dictadas por el RGPD) de gran valor. 
+
+
 
 
 
 %-------------------------------------------PARTE 3------------------------------------------------------------------------------------
 \chapter{Sistemas de riesgo}
 \label{cha:sistemas-de-riesgo}
+\begin{quote}
+Para determinar si un sistema informático es de riesgo, es necesario llevar a cabo un análisis de riesgo.
+El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo.\cite{wikip} 
+\end{quote}
+
+Según el BS ISO/IEC 27001:2005, la evaluación de riesgo incluye las siguientes actividades y acciones:
+\begin{enumerate}
+\item {\bfseries Identificación de los activos:}
+Este proceso busca identificar los activos de la empresa.
+\item {\bfseries Identificación de los requisitos legales y de negocio que son relevantes para la identificación de los activos:}
+Este paso recoge la información acerca de la normativa que debe cumplimentar la empresa para llevar su actividad acabo, normalmente se encuentran recogidos en artículos como el BOE.
+\item {\bfseries Valoración de los activos identificados, teniendo en cuenta los requisitos legales y de negocio identificados anteriormente, y el impacto de una pérdida de confidencialidad, integridad y disponibilidad.}
+\item {\bfseries Evaluación del riesgo, de las amenazas y las vulnerabilidades a ocurrir.}
+\item {\bfseries Cálculo del riesgo. }
+\item {\bfseries Evaluación de los riesgos frente a una escala de riesgo preestablecidos.}
+\end{enumerate}
+
+A través de este análisis intentamos gestionar los posibles riesgos potenciales para prevenir este tipo de situaciones negativas para la actividad empresarial, recogiendo los factores fundamentales para su consecución en diferentes documentos según la metodología aplicada, que dependerá fundamentalmente de la actividad de la empresa:
+No se describen los pasos de las metodologías nombradas, ya que todas ellas cumplen con las exigencias de BS ISO/IEC 27001:2005 (descritas al comienzo del punto 3), y por tanto son semejantes, en vez de eso se mostrarán las metodologías existentes más importantes según la actividad de la empresa o por su característica más llamativa.
+
+
+\subsection{Metodologías principales para la evaluación de riesgos:}
+\begin{enumerate}
+\item {\bfseries ARLI-CIB:}
+Esta metodología está destinadas a empresas del sector industrial.
+\item {\bfseries MAGERIT:}
+Esta metodología está enfocada a empresas con grandes sistemas de información.
+\item {\bfseries OCTAVE:}
+Esta metodología está enfocada hacía empresas con grandes infraestructuras TI al igual que MAGERIT.
+\item {\bfseries Citicus One:}
+Brinda un enfoque para administrar el riesgo de la información, el riesgo del proveedor y otras áreas clave de riesgo operacional en toda la empresa.
+\item {\bfseries COBIT 5:}
+Es un marco mundialmente aceptado para la gestión de TI, alinea las metas de negocio con los procesos y metas TI proporcionando herramientas, recursos y orientación para lograr, identificar y asociar las responsabilidades de los procesos  empresariales.
+\item {\bfseries CRAMM:}
+Esta metodología se considera mixta, ya que hace un análisis cualitativo y cuantitativo del análisis de riesgo.
+\end{enumerate}
+
+
+
+\subsection{Herramientas  para la evaluación de riesgos:}
+Las herramientas que se muestran a continuación sirven de apoyo a las metodologías para la consecución de su objetivo.
+\begin{enumerate}
+
+\item {\bfseries Matriz de riesgo:}
+Su función más importante es mostrar de manera resumida los riesgos, su probabilidad  y sus posibles soluciones de manera visual en una tabla, esta herramienta no se encarga de obtener estos datos, solo mostrarlos de manera gráfica.
+El objetivo de esta matriz es obtener una idea general de los riesgos de la empresa y la posibilidad de que estos ocurran de manera visual.\\
+Se muestra un ejemplo de esta herramienta en \ref{img:matriz_riesgo}
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=6in]{matriz_de_riesgo.png}
+  		   \caption{Matriz de riesgo.}
+  		   \label{img:matriz_riesgo}
+\end{figure}
+\item {\bfseries Check-lists:}
+Es una técnica que permite identificar los riesgos de una manera simple, proporcionando una lista de incertidumbres típicas a considerar.
+
+\item {\bfseries SWIFT:}
+Al igual que check-lists, sirve para identificar riesgos.
+\item {\bfseries Análisis de árbol de fallas:}
+Esta técnica se inicia viendo cómo se comporta algunos de los recursos del sistema de información ante un evento no deseado, y determina todas las maneras en las que este podría ocurrir, se representa gráficamente en un diagrama de árbol lógico.\\
+Se muestra un ejemplo de esta herramienta en Figura \ref{img:diagrama_arbol_de_fallas}.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=6in]{diagrama-arbol-fallas.png}
+  		   \caption{Diagrama árbol de fallas.}
+  		   \label{img:diagrama_arbol_de_fallas}
+\end{figure}
+\item {\bfseries Diagrama causa-efecto:}
+Esta herramienta permite conocer la raíz de un problema y cuellos de botella en procesos. Se representa mediante un diagrama denominado espina de pescado.\\
+Se muestra un ejemplo de esta herramienta en Figura \ref{img:diagrama_causa_efecto}.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=6in]{diagrama-causa-efecto.jpg}
+  		   \caption{Diagrama causa-efecto.}
+  		   \label{img:diagrama_causa_efecto}
+\end{figure}
+
+\item {\bfseries AMFE:}
+Esta técnica identifica y analiza los fallos potenciales, mecanismos y los efectos de esos fallos. \\
+Se muestra un ejemplo de esta herramienta en Figura \ref{img:amfe}.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=7in]{AMFE.jpg}
+  		   \caption{AMFE.jpg}
+  		   \label{img:amfe}
+\end{figure}
+
+\item {\bfseries HAZOP:}
+Esta herramienta tiene como objetivo detectar situaciones de inseguridad en plantas industriales, debido a la operación o a los procesos productivos.\\
+Se muestra un ejemplo de esta herramienta en Figura \ref{img:hazop}.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=6in]{hazop.jpg}
+  		   \caption{HAZOP.}
+  		   \label{img:hazop}
+\end{figure}
+
+\item {\bfseries LOPA:}
+Permite la evaluación de controles, así como la determinación de su eficacia.\\
+Se muestra un ejemplo de esta herramienta en Figura \ref{img:lopa}.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=2in]{LOPA.png}
+  		   \caption{LOPA.}
+  		   \label{img:lopa}
+\end{figure}
+
+\end{enumerate}
 
 
 
