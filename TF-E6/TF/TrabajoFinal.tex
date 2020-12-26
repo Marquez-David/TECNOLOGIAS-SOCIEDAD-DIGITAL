@@ -66,7 +66,7 @@ Como ya se ha afirmado antes, la Ciberseguridad no solo aplica al ámbito inform
 aquellas actividades orientadas a responder a determinadas amenazas, que usando la tecnología e Internet como medio, puedan 
 verse tremendamente amplificadas. Podemos afirmar que cuando hablamos de Ciberseguridad estamos hablando de amenazas, 
 de entender lo que está sucediendo, quién está detrás y por qué. En este documento nos centraremos fundamentalmente en la 
-tecnología como medio en la amenaza, pero aportaremos otras perspectivas a la hora de ofrecer respuestas. \cite{pwc}.
+tecnología como medio en la amenaza, pero aportaremos otras perspectivas a la hora de ofrecer respuestas. \nocite{pwc}.
 
 
 
@@ -259,17 +259,47 @@ de la Ingeniería define ciberataque como:
 \emph{"Forma de ciberguerra o ciberterrorismo donde, combinado con ataque físico o no, se intenta impedir el empleo de los sistemas de información 
 del adversario o el acceso a la misma." \cite{ciberataque-rai}}.
 
-Una vez que conocemos el significado de ciberataque, podemos conocer los distintos tipos que hay, así como las consecuencias de cada uno de ellos. En primer 
-lugar tenemos el ciberataque conocido como software malicioso o Malware, este ataque es muy genérico y engloba a otros ciberataques conocidos como 
-spyware, ransomware, virus y gusanos. El malware infringe las redes mediante alguna de las vulnerabilidades definidas en el capítulo \ref{cha:vulneravilidades-y-ataques}. 
-Una vez que el malware está dentro del sistema, algunos de los múltiples ataques posibles son:
+Estos ciberataques aprovechan alguna de las vulnerabilidades ya comentadas en el capítulo \ref{cha:vulneravilidades-y-ataques}, estando asociadas al software, a los dispositivos 
+informáticos o a las personas que los administran y utilizan. Mientras tanto, los piratas informáticos y cibermercenarios crean, distribuyen y utilizan 
+sofisticadas herramientas de exploit y malware para robar o destruir no solo datos empresariales fundamentales, sino comprometer sitios web e 
+interrumpir estructuras operativas, así como el robo de identidad de personas.
 
-\begin{enumerate}
-  \item Bloquear el acceso a los componentes clave de la red(ransomware).
-  \item Instalar malware o software dañino adicional.
-  \item Obtener información furtivamente mediante la transmisión de datos del disco duro (spyware).
-  \item Alterar ciertos componentes y hacer que el equipo sea inoperable.
-\end{enumerate}
+Tanto si el motivo es el espionaje como el sabotaje, los ciberdelincuentes emplean distintos métodos de ataque, algunos de ellos son el "spear-phishing",
+ el ataque de inyección SQL, el filtro de scripts de sitios (XSS) y los ataques de fuerza bruta, adaptándolos o usándolos de forma combinada para llevar 
+a cabo elaborados ciberataques. Una de las tácticas más perturbadora utilizada en los ciberataques es el ataque distribuido de denegación del servicio 
+(DDoS), en el que se utilizan bots infectados para congestionar un sitio web o una aplicación web hasta el punto de que los usuarios legítimos no pueden
+ acceder a él, algo que cuesta a las empresas millones de dólares en ingresos, pérdida de productividad y daños en la reputación.\nocite{akamai}
+
+\section{Spear-phishing}
+\label{sec:spear-phishing}
+
+A partir de los correos electrónicos de phishing los ciberdelincuentes acaban consiguiendo datos de acceso y contraseñas. No obstante, hoy en día, las 
+probabilidades de que los usuarios caigan en el engaño de los mensajes falsos son bastante reducidas. Ahora hay una nueva variante de este tipo de 
+engaño, el spear-phishing, mucho más concreta y, por lo tanto más peligrosa.
+
+El principio del phishing es relativamente sencillo, los estafadores crean correos electrónicos, páginas web e incluso mensajes cortos de carácter falso 
+que solicitan información de inicio de sesión de los usuarios. Es así como los estafadores se hacen con los datos de acceso para tiendas online, redes 
+sociales, espacios de almacenamiento en la nube y en el peor de los casos, se hacen incluso con información bancaria o datos de la tarjeta de crédito. 
+De esta forma, con una página web de phishing sencilla se pueden obtener datos sensibles, información que tiene un alto valor económico en el mercado 
+negro digital.
+
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5in]{spear-phishing.png}
+  		   \caption{Pishing vs Spear-phishing \cite{armor}}
+  		   \label{img:spear-pishing}
+\end{figure}
+
+El spear-phishing, en cambio, es mucho más específico. En este caso, se selecciona a una víctima concreta y el engaño se adapta de forma precisa a la 
+persona elegida. Por eso, el principal foco de estos ataques suelen ser empresas y organizaciones. Los agentes que emplean esta variante de phishing 
+también suelen diferenciarse de los estafadores habituales. En lugar de recopilar todo tipo de información aleatoria para venderla al mejor postor, estos
+ladrones actúan específicamente contra la víctima seleccionada para causar daño a la empresa o la organización afectada. Por ello, al margen del robo de 
+datos bancarios, también se perpetúan crímenes de espionaje industrial y ciberataques sobre objetivos militares o la infraestructura de una región.
+
+\section{SQL Injection}
+\label{sec:sql-injection}
+
+Este Ciberataque consiste en usar un trozo de código para manipular una base de datos y acceder a información potencialmente valiosa.
 
 
 %-------------------------------------------PARTE 5------------------------------------------------------------------------------------
