@@ -340,6 +340,11 @@ Por ejemplo, la información de inicio de sesión de una página web se envía a
 este tipo de formulario web está diseñado para aceptar solo tipos muy específicos de datos, como un nombre o una contraseña. Cuando se agrega esa información, 
 esta se coteja contra una base de datos y, si coincide, se otorga acceso al usuario. De lo contrario, se deniega el acceso.
 
+Los problemas surgen porque la mayoría de los formularios web no tienen forma de detener el ingreso de información adicional a través de consultas SQL. Así, los 
+cibercriminales pueden aprovechar esta vulneravilidad y utilizar los cuadros de entrada del formulario para enviar sus propias solicitudes a la base de datos. Esto 
+podría permitirles llevar a cabo una amplia gama de actividades maliciosas, desde el robo de datos confidenciales hasta la manipulación de la información de la base 
+de datos para sus propios fines.
+
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{sqli.png}
@@ -347,15 +352,58 @@ esta se coteja contra una base de datos y, si coincide, se otorga acceso al usua
   		   \label{img:sqli}
 \end{figure}
 
-Los problemas surgen porque la mayoría de los formularios web no tienen forma de detener el ingreso de información adicional a través de consultas SQL. Así, los 
-cibercriminales pueden aprovechar esta vulneravilidad y utilizar los cuadros de entrada del formulario para enviar sus propias solicitudes a la base de datos. Esto 
-podría permitirles llevar a cabo una amplia gama de actividades maliciosas, desde el robo de datos confidenciales hasta la manipulación de la información de la base 
-de datos para sus propios fines.
-
 Debido a la prevalencia de sitios web y servidores que utilizan bases de datos, el método de ataque de inyección SQL es uno de los tipos de ciberataques más antiguos 
 y generalizados. Varios avances han aumentado el riesgo de este tipo de ataques, en especial la llegada de programas de inyecciones SQL automatizadas. Estos
 programas permiten realizar ataques automáticamente en tan solo minutos, pudiendo acceder a cualquier tabla o columna de una base de datos con tan solo un clic 
 y un proceso de ataque.
+
+\section{Cross site scripting(XSS)}
+\label{sec:Cross site scripting}
+Como acabamos de ver en la sección anterior 4.3, el objetivo de los ataques por inyección de código SQL es obtener información de la base de datos de una empresa 
+u organización. Los ataques por Cross site scriting tienen la misma finalidad que SQL Injection, obtener información a través de consultas SQL, pero en este caso el 
+objetivo no son empresas ni organizaciones sino usuarios individuales.
+
+La inyección de código, al igual que en el caso del SQL, consiste en intercalar pequeños programas o comandos en medio del texto que se escribe en ese recuadro, 
+pero ahora no será el servidor web, ni el sistema de gestión de la base de datos quienes ejecutarán ese código, como en el caso del SQL Injection, sino que ahora 
+con la vulnerabilidad XSS quien ejecutará ese código es el navegador del usuario víctima.
+
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5in]{xss.png}
+  		   \caption{Cross site scripting \cite{xss}}
+  		   \label{img:xss}
+\end{figure}
+
+\begin{enumerate}
+\item {\bfseries Cross Site Scripting persistente:}
+Si el código SQL insertado se queda almacenado en el servidor, formando parte de una aplicación web, se dice que el ataque es persistente. Normalmente el atacante
+trata de insertar tags propios de HTML como <iframe>, o <script>, de esta forma el atacante podría ejecutar código malicioso.
+
+\item {\bfseries Cross Site Scripting reflejado:}
+Si el código que insertamos no se queda almacenado en la web, sino que va embebido dentro de un enlace que se hace llegar de algún modo a la víctima para que 
+pinche en él, se dice que este tipo de ataque es reflejado. La característica diferencial con el anterior ataque es que en este caso en el servidor web no queda almacenado nada.
+
+\end{enumerate}
+
+\section{Ataque por denegación de servicio}
+\label{sec:denegacion-servicio}
+
+Un ataque de denegación de servicio tiene como objetivo inhabilitar el uso de un sistema, una aplicación o una máquina, con el fin de bloquear su servicio. Este ataque 
+puede afectar, tanto a la fuente que ofrece la información como puede ser una aplicación o el canal de transmisión, como a la red informática. Existen dos técnicas de este tipo de ataques, la denegación de servicio o DoS (Denial of Service) y la denegación de servicio distribuido o DDoS (Destributed Denial of Service).
+
+En los ataques DoS se generan una cantidad masiva de peticiones al servicio desde una misma máquina o dirección IP, consumiendo así los recursos que ofrece el servicio hasta que llega un momento en que no tiene capacidad de respuesta y comienza a rechazar peticiones, esto es cuando se materializa la denegación del servicio.
+
+En el caso de los ataques DDoS, se realizan peticiones o conexiones empleando un gran número de ordenadores o direcciones IP. Estas peticiones se realizan todas al mismo tiempo y hacia el mismo servicio objeto del ataque. Un ataque DDoS es más difícil de detectar, ya que el número de peticiones proviene desde diferentes IP´s y el administrador no puede bloquear la IP que está realizando las peticiones, como sí ocurre en el ataque DoS.
+
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5in]{ddos.png}
+  		   \caption{Ataque por denegacion de servicio \cite{ddos}}
+  		   \label{img:ddos}
+\end{figure}
+
+Como hemos visto, los ataques de denegación de servicio son utilizados para inhabilitar un servicio ofrecido por un servidor, haciendo colapsar el sistema aprovechando sus vulnerabilidades. El objetivo de los ciberdelincuentes es provocar un perjuicio, tanto a los usuarios que se abastecen del servicio, como al administrador que lo ofrece, inhabilitando su funcionalidad y provocando pérdidas, tanto económicas, como de prestigio
+
 
 
 %-------------------------------------------PARTE 5------------------------------------------------------------------------------------
@@ -394,6 +442,8 @@ En primer lugar.\cite{rstudio}. holaaa
 \nocite{herramientas-evaluacion-riesgos}
 \nocite{bibdigital}
 \nocite{bibdigital}
+
+\nocite{xss2}
 
 %se incluye el archivo de biobliografia
 \input{../Book/biblio/bibliography.tex}
