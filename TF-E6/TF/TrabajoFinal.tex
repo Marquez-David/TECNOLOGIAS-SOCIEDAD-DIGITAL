@@ -264,24 +264,54 @@ informáticos o a las personas que los administran y utilizan. Mientras tanto, l
 sofisticadas herramientas de exploit y malware para robar o destruir no solo datos empresariales fundamentales, sino comprometer sitios web e 
 interrumpir estructuras operativas, así como el robo de identidad de personas.
 
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=4in]{ciberataques.png}
+  		   \caption{Ciberataques mas comunes \cite{ciberataques-tipos}}
+  		   \label{img:ciberataques}
+\end{figure}
+
 Tanto si el motivo es el espionaje como el sabotaje, los ciberdelincuentes emplean distintos métodos de ataque, algunos de ellos son el "spear-phishing",
- el ataque de inyección SQL, el filtro de scripts de sitios (XSS) y los ataques de fuerza bruta, adaptándolos o usándolos de forma combinada para llevar 
-a cabo elaborados ciberataques. Una de las tácticas más perturbadora utilizada en los ciberataques es el ataque distribuido de denegación del servicio 
-(DDoS), en el que se utilizan bots infectados para congestionar un sitio web o una aplicación web hasta el punto de que los usuarios legítimos no pueden
- acceder a él, algo que cuesta a las empresas millones de dólares en ingresos, pérdida de productividad y daños en la reputación.\nocite{akamai}
+ el ataque de inyección SQL, el filtro de scripts de sitios (XSS), ataques de fuerza bruta... Una de las tácticas más perturbadora utilizada en los ciberataques 
+es el ataque distribuido de denegación del servicio (DDoS), en el que se utilizan bots infectados para congestionar un sitio web o una aplicación web hasta el 
+punto de que los usuarios legítimos no pueden acceder a él, algo que cuesta a las empresas millones de dólares en ingresos, pérdida de productividad y 
+daños en la reputación.\nocite{akamai}
 
-\section{Spear-phishing}
-\label{sec:spear-phishing}
+\section{Solftware malicioso: Malware}
+\label{sec:software-malicioso-malware}
 
-A partir de los correos electrónicos de phishing los ciberdelincuentes acaban consiguiendo datos de acceso y contraseñas. No obstante, hoy en día, las 
-probabilidades de que los usuarios caigan en el engaño de los mensajes falsos son bastante reducidas. Ahora hay una nueva variante de este tipo de 
-engaño, el spear-phishing, mucho más concreta y, por lo tanto más peligrosa.
+La palabra malware viene del inglés, y es el resultado de la unión de las palabras malicious software(software malicioso). Por lo tanto, se trata de un tipo de 
+software o de aplicación que tiene como objetivo hacer daño al dispositivo en el que se ha conseguido alojar, instalar o infiltrar, ya sea un ordenador,
+ un teléfono móvil… 
+
+Existen muchos tipos de malware, los troyanos, los gusanos, el spyware, el adware, el ransomware. Sin embargo, malware es el 
+término principal que se emplea para hablar de todas esas amenazas informáticas. La forma de actuar de cada uno suele ser diferente, pero en común tienen 
+el objetivo de dañar el equipo o a su usuario, y el de instalarse en el dispositivo electrónico. A continuación, se enumeran los tipos de malware más conocidos:
+
+\begin{enumerate}
+
+\item {\bfseries Virus informático:} 
+Es un tipo de malware cuyo objetivo es alterar el correcto funcionamiento de un dispositivo. Un virus necesita ser ejecutado por el usuario pensando que es 
+una aplicación legítima, y una vez lo hace, puede replicarse e infectar el equipo.
+
+\item {\bfseries Gusano informático:} 
+Este malware no necesita de la intervención del usuario ni modificar ningún archivo existente. Se suelen utilizar para crear redes de ordenadores “zombies” 
+que pueden actuar de forma simultánea para enviar SPAM de forma masiva, difundir malware o lanzar diferentes tipos de ataques informáticos.
+
+\end{enumerate}
+
+\section{Phishing y Spear-phishing}
+\label{sec:phishing-spear-phishing}
 
 El principio del phishing es relativamente sencillo, los estafadores crean correos electrónicos, páginas web e incluso mensajes cortos de carácter falso 
 que solicitan información de inicio de sesión de los usuarios. Es así como los estafadores se hacen con los datos de acceso para tiendas online, redes 
 sociales, espacios de almacenamiento en la nube y en el peor de los casos, se hacen incluso con información bancaria o datos de la tarjeta de crédito. 
 De esta forma, con una página web de phishing sencilla se pueden obtener datos sensibles, información que tiene un alto valor económico en el mercado 
 negro digital.
+
+A partir de los correos electrónicos de phishing los ciberdelincuentes acaban consiguiendo datos de acceso y contraseñas. No obstante, hoy en día, las 
+probabilidades de que los usuarios caigan en el engaño de los mensajes falsos son bastante reducidas. Ahora hay una nueva variante de este tipo de 
+engaño, el spear-phishing, mucho más concreta y, por lo tanto más peligrosa, conocida como Spear-Phishing.
 
 \begin{figure}[tphb]
   		   \centering
@@ -290,7 +320,7 @@ negro digital.
   		   \label{img:spear-pishing}
 \end{figure}
 
-El spear-phishing, en cambio, es mucho más específico. En este caso, se selecciona a una víctima concreta y el engaño se adapta de forma precisa a la 
+El Spear-phishing, a diferencia del Phishing, es mucho más específico. En este caso, se selecciona a una víctima concreta y el engaño se adapta de forma precisa a la 
 persona elegida. Por eso, el principal foco de estos ataques suelen ser empresas y organizaciones. Los agentes que emplean esta variante de phishing 
 también suelen diferenciarse de los estafadores habituales. En lugar de recopilar todo tipo de información aleatoria para venderla al mejor postor, estos
 ladrones actúan específicamente contra la víctima seleccionada para causar daño a la empresa o la organización afectada. Por ello, al margen del robo de 
@@ -299,7 +329,30 @@ datos bancarios, también se perpetúan crímenes de espionaje industrial y cibe
 \section{SQL Injection}
 \label{sec:sql-injection}
 
-Este Ciberataque consiste en usar un trozo de código para manipular una base de datos y acceder a información potencialmente valiosa. 
+SQL Injection es uno de los Ciberataques más frecuentes y amenazadores, ya que puede atacar cualquier sitio web o aplicación que use una base de datos. 
+El ataque consiste en usar un trozo de código para manipular una base de datos y acceder a información potencialmente valiosa empleando consultas SQL. 
+Una consulta SQL no es mas que una solicitud enviada a una base de datos. 
+
+Por ejemplo, la información de inicio de sesión de una página web se envía a través de un formulario antes de que el usuario pueda acceder al sitio. Normalmente, 
+este tipo de formulario web está diseñado para aceptar solo tipos muy específicos de datos, como un nombre o una contraseña. Cuando se agrega esa información, 
+esta se coteja contra una base de datos y, si coincide, se otorga acceso al usuario. De lo contrario, se deniega el acceso.
+
+Los problemas surgen porque la mayoría de los formularios web no tienen forma de detener el ingreso de información adicional a través de consultas SQL. Así, los 
+cibercriminales pueden aprovechar esta vulneravilidad y utilizar los cuadros de entrada del formulario para enviar sus propias solicitudes a la base de datos. Esto 
+podría permitirles llevar a cabo una amplia gama de actividades maliciosas, desde el robo de datos confidenciales hasta la manipulación de la información de la base 
+de datos para sus propios fines. \nocite{sqli-kaspersky}
+
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5in]{sqli.png}
+  		   \caption{SQL Injection}
+  		   \label{img:sqli}
+\end{figure}
+
+Debido a la prevalencia de sitios web y servidores que utilizan bases de datos, el método de ataque de inyección SQL es uno de los tipos de ciberataques más antiguos 
+y generalizados. Varios avances han aumentado el riesgo de este tipo de ataques, en especial la llegada de programas de inyecciones SQL automatizadas. Estos 
+programas permiten realizar ataques automáticamente en tan solo minutos, pudiendo acceder a cualquier tabla o columna de una base de datos con tan solo un clic 
+y un proceso de ataque.
 
 
 %-------------------------------------------PARTE 5------------------------------------------------------------------------------------
