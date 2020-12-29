@@ -464,7 +464,7 @@ de respuesta de forma que se evite cualquier réplica futura de la amenaza.
 %-------------------------------------------PARTE 6------------------------------------------------------------------------------------
 \chapter{Protección informática}
 \label{cha:proteccion-informatica}
-La protección informática consiste en el área que se encarga de proteger la información que se encuentra localizada en un sistema.
+Antes de definir el concepto de protección informática debemos definir el concepto de información, que se define como el activo que tiene valor para alguna empresa o particular por lo que requiere una protección adecuada para garantizar la continuidad del negocio, minimizar daños de terceros y maximizar un entorno adecuado para inversiones y oportunidades de negocio. Sabiendo esto podemos definir como protección informática el conjunto de técnicas, herramientas, sistemas y procedimientos usados para proteger la información que se encuentra localizada en un sistema.
 \section{Caraterísticas de la protección informática}
 Las cinco características que garantizan una buena protección informática son:
 \begin{enumerate}
@@ -479,6 +479,15 @@ Como su nombre indica esta cualidad permite el acceso y la utilización cuando y
 \item {\bfseries No repudio:}
 Consiste en la irrenunciabilidad por parte de la información de un emisor. Es muy similar a la autentificación, sin embargo, se diferencia en que la autentificación se centra en las personas implicadas y la cualidad de no repudio va enfocada frente a terceros. Un ejemplo de esta característica serían las firmas electrónicas, el proceso es bastante similar al de la criptografía simétrica usado en la confidencialidad, una persona crea un documento del que se obtiene el hash, este hash es encriptado con la clave privada dicha persona y el resultado de esto es la firma electrónica que es añadida al documento.
 \end{enumerate}
+\section{Tipo de seguridad en función del momento} 
+Dependiendo del momento en el que apliquemos medidas de seguridad podemos clasificarlas en: 
+\begin{enumerate}
+\item {\bfseries Seguridad activa:}
+Se centra en prevenir y evitar daños a los sistemas ya sean de tipo hardware o software. Los mecanismos más frecuentes relacionados con este tipo de seguridad son por ejemplo los antivirus, la encriptación de datos, controles de acceso a salas, sistemas de redundancia de hardware. En conclusión, usaremos el término de seguridad activa para referirnos a técnicas para ser proactivos ante amenazas. 
+\item {\bfseries Seguridad pasiva:}
+La seguridad pasiva, no es lo contrario a la seguridad activa sino que es un complemento al que se recurre cuando las medidas de seguridad activa no han sido adecuadas para frenar una amenaza. Un ejemplo sencillo son las copias de seguridad aunque el hecho de realizar las copias de seguridad es poner en marcha una seguridad activa ya que nos anticipamos a la amenaza de perder nuestra información. Sin embargo, el hecho de recuperar un archivo de una copia de seguridad, pasa a ser seguridad activa debido a que una vez producido el daño, podemos solucionarlos. En este caso nos referiremos a la seguridad pasiva como una forma de ser reactivos actuando una vez se haya producido el daño.
+ \end{enumerate}
+
 
 
 
@@ -525,7 +534,8 @@ Este servidor proxy aumenta la privacidad y el anonimato de los clientes mediant
  Consiste en un servidor proxy instalado en una red con varios servidores web y realizará en función de intermediario a las peticiones externas ofreciendo una capa de seguridad previa, además de distribuir la carga de las distintas peticiones externan y gestionar el SSL.
 \end{enumerate}
 \end{enumerate}
-
+\section{Sistemas software:}
+Es usada para garantizar la protección del software frente a ataques maliciosos de hackers, pérdida de información y otros riesgos.
 
 
 
