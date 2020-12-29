@@ -504,24 +504,74 @@ Consiste en aplicar impedimentos físicos y funciones de control como medida de 
 Es usado para crear un único volumen lógico, el cual físicamente esté compuesto por varios discos físicos. Dependiendo de qué modo de RAID utilicemos, esto nos servirá para conseguir un volumen con mayor seguridad contra fallos de hardware de los discos que lo componen gracias al almacenamiento redundante de estos o para conseguir simplemente un volumen de capacidad mayor. Protegen la disponibilidad de la información.  Los modos de raid que ofrecen una mayor seguridad del dispositivo son:
 \begin{enumerate}
 \item {\bfseries RAID 1:}
+
 Para ello son necesarios al menos 2 discos de igual tamaño, se realiza una copia espejo es decir lo que de escribe en uno se copia en el otro permitiendo de esta forma que, aunque se produzca un fallo en uno de los 2 discos sigamos conservando la información en otro el disco.
+
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=2in]{raid1.png}
+  		   \caption{Volumen reflejado (RAID1) \cite{ddos}}
+  		   \label{img:raid1}
+\end{figure}
+
 \item {\bfseries RAID 5:}
+
 En esta configuración necesitaremos mínimo 3 discos de la misma capacidad, la capacidad total de almacenamiento será la de todos los discos menos uno, es decir, dos y los datos se irán almacenando de forma parcialmente redundante permitiendo que, aunque suframos un fallo en uno de los discos, podamos seguir accediendo a toda la información. Este sistema es más eficiente que el RAID 1 debido a que en este solo tenemos la capacidad de almacenamiento de uno de los discos y en el RAID 5 tenemos la capacidad de dos, aunque la desventaja de este sistema es que requiere un disco más.
 \end{enumerate}
+
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=3in]{raid5.png}
+  		   \caption{ RAID 5 \cite{ddos}}
+  		   \label{img:raid5}
+\end{figure}
+
 \item {\bfseries Sistemas de Alimentación Ininterrumpida (SAI):}
 Son dispositivos que ofrecen protección contra apagones o irregularidades en la corriente eléctrica. Su principal función es suministrar la energía eléctrica que tienen acumuladas en sus baterías cuando se producen cortes eléctricos evitando así posibles fallos y averías en los sistemas conectados el evitan que se apaguen de forma repentina, además algunos SAI poseen un regulador de tensión que asegura estabilidad en la corriente logrando una alimentación de los dispositivos conectados más constante y así prolongando la vida útil de dichos sistemas. Protegen la disponibilidad de la información. 
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5.5in]{sais.png}
+  		   \caption{ Sistemas de alimentación ininterrumpida \cite{ddos}}
+  		   \label{img:SAIS}
+\end{figure}
 \item {\bfseries Firewall de hardware:}
 
 También conocido como cortafuegos se trata de un dispositivo que es capaz de bloquear comunicaciones no autorizadas, permitiendo las que si lo están. Los cortafuegos permiten una configuración para permitir y limitar el tráfico entre distintas redes o ámbitos de una red mediante un conjunto de reglas y normas. Sus principales características son el filtrado por aplicación, reglas de filtrado sobre el tráfico de entrada y salida de una red en una interfaz de red, filtrado de paquetes comprobando su MAC, IP o puerto destino y origen y almacenar el registro del filtrado de paquetes. También existe el firewall de software, la diferencia es que el cortafuegos de hardware se trata de un dispositivo dedicado únicamente como firewall y el de software no. Protegen la integridad de la información.  Las arquitecturas de cortafuegos más implementadas son:
 \begin{enumerate}
 \item {\bfseries Screening router:}
  Un router hace de frontera entre la red pública y la red privada, realizando la función de cortafuegos.
+
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5in]{screening-router.png}
+  		   \caption{Arquitectura screening router \cite{ddos}}
+  		   \label{img:screening-router}
+\end{figure}
+
 \item {\bfseries Dual Homed-Host:}
 Un servidor con al menos dos interfaces de red divide la red pública de la red privada y la función de firewall.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5in]{dual-homed-host.png}
+  		   \caption{Arquitectura dual homed host \cite{ddos}}
+  		   \label{img:dual-homed-host}
+\end{figure}
 \item {\bfseries Screened Host:}
 Se trata de la combinación de un router como frontera y un servidor proxy que realizará las tareas de filtrado.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5in]{screened-host.png}
+  		   \caption{Arquitectura screened host \cite{ddos}}
+  		   \label{img:screened-host}
+\end{figure}
 \item {\bfseries Screened-subnet:}
 Se crea una red intermedia entre la red externa y la red privada denominada DMZ o zona desmilitarizada en la que se localizan los servidores, teniendo un nivel de seguridad mayor en el cortafuegos de acceso a la red interna y uno menor en el cortafuegos hacia la red externa.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5in]{screened-subnet.png}
+  		   \caption{Arquitectura screened subnet \cite{ddos}}
+  		   \label{img:screened-subnet}
+\end{figure}
 \end{enumerate}
 \item {\bfseries Servidor proxy:}
 Consiste en un sistema que gestiona conexiones de red, haciendo de intermediario entre las peticiones de los servidores y los clientes, como FTP, DNS, https, etc., generando de tal forma una memoria caché con las diversas peticiones y respuestas de los servidores. Aunque su principal finalidad no es la seguridad sino que es servir más rápidamente a las conexiones siguientes que hayan sido solicitadas, añade funciones de autentificación y control de usuarios, reglas de filtrado de contenidos solicitados y un registro de logs. Protegen la disponibilidad e integridad de la información. Los tipos de servidor proxy que ofrecen una mayor seguridad son:
@@ -579,6 +629,22 @@ Se trata de documentos digitales mediante los que una entidad certificadora aseg
 
 \nocite{xss2}
 \nocite{pri}
+
+%\nocite{informacion}
+%\nocite{proteccion}
+%\nocite{caracteristicasseguridad}
+%\nocite{activaypasiva}
+%\nocite{tiposseguridad}
+%\nocite{raid}
+%\nocite{sai}
+%\nocite{firewall}
+%\nocite{proxy}
+%\nocite{proxy2}
+%\nocite{antivirus}
+%\nocite{certificado}
+
+
+
 
 %se incluye el archivo de biobliografia
 \input{../Book/biblio/bibliography.tex}
