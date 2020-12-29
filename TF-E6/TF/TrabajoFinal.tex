@@ -24,7 +24,6 @@
 \setcounter{page}{1}
 \begin{center}
  {\bfseries \Large Resumen}
-\addcontentsline{toc}{chapter}{Resumen}
 \end{center}
 
 Aqui va el resumen
@@ -43,23 +42,35 @@ Aqui va el resumen
 \chapter{Introducción}
 \label{cha:introduccion}
 
-El término “Ciberseguridad” suele ser una expresión ampliamente utilizada por la sociedad, no solo en el ámbito 
-informático, sino en muchas otras disciplinas no relacionadas con la tecnología. En la mayoría de los casos la palabra 
-Ciberseguridad se suele emplear de forma errónea pensando que el termino funciona como símil de seguridad de la 
-información, seguridad en computo o seguridad informática, pero esta idea no es del todo correcta.
+De la misma forma que ha existido siempre la delincuencia, desde hace algunos años ha aparecido 
+la delincuencia cibernética o lo que se conoce como ciberdelincuencia. Expertos en sistemas 
+informáticos se aprovechan de sus conocimientos para delinquir y obtener información de empresas 
+o personas. Una vez se ha obtenido la información su objetivo es venderla a otras empresas o 
+particulares obteniendo así una gran cantidad de dinero. 
 
-Si bien es cierto que en la lengua española no existe una definición oficial para la palabra Ciberseguridad, podemos 
-tomar la definición de profesionales del sector. Según ISACA (Information Systems Audit and Control Association) la 
-Ciberseguridad se define como:
+En la actualidad las empresas almacenan grandes cantidades de información de vital importancia
+para el correcto funcionamiento del negocio. Empresas que tratan con temas financieros 
+o que deben proteger la información privada y confidencial de sus clientes, dan una importancia 
+extrema a la seguridad de sus bases de datos. Es por eso por lo que la seguridad informática 
+ha adquirido una relevancia mayor en los últimos años y se ha convertido en un término tan 
+popular.
+
+Ciberseguridad es una expresión ampliamente utilizada por la sociedad, no solo en el ámbito 
+informático, sino en muchas otras disciplinas no relacionadas con la tecnología. En la mayoría 
+de los casos la palabra Ciberseguridad se suele emplear de forma errónea pensando que el 
+termino funciona como símil de seguridad de la información o seguridad en computo, pero esta
+idea no es del todo correcta. Si bien es cierto que en la lengua española no existe una definición 
+oficial para la palabra, podemos tomar la definición de profesionales del sector. 
+Según ISACA (Information Systems Audit and Control Association) la Ciberseguridad se define como:
 
 \emph{“Protección de activos de información, a través del tratamiento de amenazas que ponen en riesgo la información 
 que es procesada, almacenada y transportada por los sistemas de información que se encuentran interconectados” \cite{bsecure}.}
 
-Como ya se ha afirmado antes, la Ciberseguridad no solo aplica al ámbito informatico, también se incluyen dentro de Ciberseguridad 
+Como ya se ha afirmado antes, la Ciberseguridad no solo aplica al ámbito informático, también se incluyen dentro de Ciberseguridad 
 aquellas actividades orientadas a responder a determinadas amenazas, que usando la tecnología e Internet como medio, puedan 
 verse tremendamente amplificadas. Podemos afirmar que cuando hablamos de Ciberseguridad estamos hablando de amenazas, 
 de entender lo que está sucediendo, quién está detrás y por qué. En este documento nos centraremos fundamentalmente en la 
-tecnología como medio en la amenaza, pero aportaremos otras perspectivas a la hora de ofrecer respuestas. \nocite{pwc}.
+tecnología como medio en la amenaza, pero aportaremos otras perspectivas a la hora de ofrecer respuestas.
 
 
 
@@ -68,14 +79,10 @@ tecnología como medio en la amenaza, pero aportaremos otras perspectivas a la h
 \chapter{Vulnerabilidades y ataques en los sistemas informáticos}
 \label{cha:vulneravilidades-y-ataques}
 
+Una vulnerabilidad en términos informáticos es una debilidad o fallo en un sistema de información, como puede ser una aplicación o un servicio web, que permite a un atacante comprometer la integridad (capacidad que tiene un sistema de información para garantizar que los datos no han sido modificados desde su creación sin autorización, asegurando que la información es válida y consistente), disponibilidad (capacidad de un sistema de información para garantizar que el este no va a sufrir caídas y que por tanto, el sistema y los datos van a  estar disponibles al usuario en todo momento.) o confidencialidad (capacidad de un sistema de información de garantizar que la información almacenada o transmitida por la red, solamente va a estar disponibles para aquellas personas autorizadas a la misma.).\cite{incibe},\cite{infosegur} 
 
-\begin{quote}
+\section{Vulnerabilidades y ataques más recurrentes:}
 
-\small Una vulnerabilidad en términos informáticos es una debilidad o fallo en un sistema de información, como puede ser una aplicación o un servicio web, que permite a un atacante comprometer la integridad (capacidad que tiene un sistema de información para garantizar que los datos no han sido modificados desde su creación sin autorización, asegurando que la información es válida y consistente), disponibilidad (capacidad de un sistema de información para garantizar que el este no va a sufrir caídas y que por tanto, el sistema y los datos van a  estar disponibles al usuario en todo momento.) o confidencialidad (capacidad de un sistema de información de garantizar que la información almacenada o transmitida por la red, solamente va a estar disponibles para aquellas personas autorizadas a la misma.).\cite{incibe},\cite{infosegur} 
-
-\end{quote}
-
-\subsection{Vulnerabilidades y ataques más recurrentes:}
 \begin{enumerate}
 \item {\bfseries Vulnerabilidad Zero Day:}
 son aquellas vulnerabilidades que acaban de ser descubiertas, y que por tanto, no tienen un parche que las solucione.
@@ -104,10 +111,10 @@ Esta vulnerabilidad sucede cuando es posible ejecutar scripts de lenguajes como 
 Consiste en la suplantación de un sitio web verdadero por otro que no lo es, pero que a nivel visual es idéntico al original.
 El ataque más conocido que aprovecha esta vulnerabilidad es el denominado Phising, que consiste en la obtención de los datos de los usuarios introducidos por ellos mismos.
 Un ejemplo frecuente de este tipo de ataques, se da a través de los emails, al usuario le llega un correo con una URL[5] que tiene un nombre semejante al nombre de su banco, el usuario al abrir el link se encuentra con un aspecto idéntico al de su banco habitual, por lo que introduce los datos, seguidamente estos datos son almacenados por el creador de dicho ataque y le redirige a la página web oficial introduciéndole los datos aportados por el usuario, de esta manera el usuario no sospecha que pueda ser algún tipo de ataque, ya que todo parece haber resultado con normalidad.
-
 \end{enumerate}
 
-\subsection{Clasificación de vulnerabilidades según gravedad y dificultad de tratamiento:}
+\section{Clasificación de vulnerabilidades según gravedad y dificultad de tratamiento:}
+
 \begin{enumerate}
 \item {\bfseries Gravedad baja: }
 Representa aquellas vulnerabilidades que tienen un impacto mínimo y que no presentan problemas para reducir este. En muchas ocasiones este tipo de vulnerabilidades no son tratadas, ya que puede ocurrir que implantar el sistema de seguridad para cubrir las mismas, sea más caro que cubrir las consecuencias de los ataques producidos por esta.
@@ -123,17 +130,12 @@ Este tipo de vulnerabilidades son imprescindibles que sean cubiertas por el equi
 Como conclusión sobre este tema, es importante destacar, que los ordenadores personales normalmente no sufren ataques pese a tener algún tipo de vulnerabilidad, ya que resulta complicado obtener información lo suficientemente valiosa como para pedir un rescate por el mismo, o este no puede ser igual de cuantioso que el exigido a una empresa, por lo que en la mayoría de los casos es suficiente con tener las actualizaciones del sistema operativo y del antivirus al día para hacer frente a los más habituales.
 En el caso de las empresas, sin embargo, es común tener un área destinada específicamente destinada a la ciberseguridad, ya que se tratan con datos sensibles(Son aquellos datos que están sujetos a condiciones de tratamiento específicas dictadas por el RGPD) de gran valor. 
 
-
-
-
-
 %-------------------------------------------PARTE 3------------------------------------------------------------------------------------
 \chapter{Sistemas de riesgo}
 \label{cha:sistemas-de-riesgo}
-\begin{quote}
+
 Para determinar si un sistema informático es de riesgo, es necesario llevar a cabo un análisis de riesgo.
 El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo.\cite{wikip} 
-\end{quote}
 
 Según el BS ISO/IEC 27001:2005, la evaluación de riesgo incluye las siguientes actividades y acciones:
 \begin{enumerate}
@@ -151,7 +153,8 @@ A través de este análisis intentamos gestionar los posibles riesgos potenciale
 No se describen los pasos de las metodologías nombradas, ya que todas ellas cumplen con las exigencias de BS ISO/IEC 27001:2005 (descritas al comienzo del punto 3), y por tanto son semejantes, en vez de eso se mostrarán las metodologías existentes más importantes según la actividad de la empresa o por su característica más llamativa.
 
 
-\subsection{Metodologías principales para la evaluación de riesgos:}
+\section{Metodologías principales para la evaluación de riesgos:}
+
 \begin{enumerate}
 \item {\bfseries ARLI-CIB:}
 Esta metodología está destinadas a empresas del sector industrial.
@@ -169,7 +172,7 @@ Esta metodología se considera mixta, ya que hace un análisis cualitativo y cua
 
 
 
-\subsection{Herramientas  para la evaluación de riesgos:}
+\section{Herramientas  para la evaluación de riesgos:}
 Las herramientas que se muestran a continuación sirven de apoyo a las metodologías para la consecución de su objetivo.
 \begin{enumerate}
 
@@ -179,8 +182,8 @@ El objetivo de esta matriz es obtener una idea general de los riesgos de la empr
 Se muestra un ejemplo de esta herramienta en \ref{img:matriz_riesgo}
 \begin{figure}[tphb]
   		   \centering
-     		   \includegraphics[width=6in]{matriz_de_riesgo.png}
-  		   \caption{Matriz de riesgo.}
+     		   \includegraphics[width=7in]{matriz_de_riesgo.png}
+  		   \caption{Matriz de riesgo}
   		   \label{img:matriz_riesgo}
 \end{figure}
 \item {\bfseries Check-lists:}
@@ -193,8 +196,8 @@ Esta técnica se inicia viendo cómo se comporta algunos de los recursos del sis
 Se muestra un ejemplo de esta herramienta en Figura \ref{img:diagrama_arbol_de_fallas} \cite{daf}.
 \begin{figure}[tphb]
   		   \centering
-     		   \includegraphics[width=6in]{diagrama-arbol-fallas.png}
-  		   \caption{Diagrama árbol de fallas.}
+     		   \includegraphics[width=5in]{diagrama-arbol-fallas.png}
+  		   \caption{Diagrama árbol de fallas}
   		   \label{img:diagrama_arbol_de_fallas}
 \end{figure}
 \item {\bfseries Diagrama causa-efecto:}
@@ -202,8 +205,8 @@ Esta herramienta permite conocer la raíz de un problema y cuellos de botella en
 Se muestra un ejemplo de esta herramienta en Figura \ref{img:diagrama_causa_efecto} \cite{diagrama-pescado}.
 \begin{figure}[tphb]
   		   \centering
-     		   \includegraphics[width=6in]{diagrama-causa-efecto.jpg}
-  		   \caption{Diagrama causa-efecto.}
+     		   \includegraphics[width=5in]{diagrama-causa-efecto.jpg}
+  		   \caption{Diagrama causa-efecto}
   		   \label{img:diagrama_causa_efecto}
 \end{figure}
 
@@ -213,7 +216,7 @@ Se muestra un ejemplo de esta herramienta en Figura \ref{img:amfe} \cite{amfe}.
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=7in]{AMFE.jpg}
-  		   \caption{AMFE.jpg}
+  		   \caption{AMFE}
   		   \label{img:amfe}
 \end{figure}
 
@@ -222,8 +225,8 @@ Esta herramienta tiene como objetivo detectar situaciones de inseguridad en plan
 Se muestra un ejemplo de esta herramienta en Figura \ref{img:hazop} \cite{hazop}.
 \begin{figure}[tphb]
   		   \centering
-     		   \includegraphics[width=6in]{hazop.jpg}
-  		   \caption{HAZOP.}
+     		   \includegraphics[width=5in]{hazop.jpg}
+  		   \caption{HAZOP}
   		   \label{img:hazop}
 \end{figure}
 
@@ -232,8 +235,8 @@ Permite la evaluación de controles, así como la determinación de su eficacia.
 Se muestra un ejemplo de esta herramienta en Figura \ref{img:lopa} \cite{lopa}.
 \begin{figure}[tphb]
   		   \centering
-     		   \includegraphics[width=2in]{LOPA.png}
-  		   \caption{LOPA.}
+     		   \includegraphics[width=4in]{LOPA.png}
+  		   \caption{LOPA}
   		   \label{img:lopa}
 \end{figure}
 
