@@ -494,11 +494,11 @@ La seguridad pasiva, no es lo contrario a la seguridad activa sino que es un com
 %-------------------------------------------PARTE 7------------------------------------------------------------------------------------
 \chapter{Sistemas utilizados para mantener la seguridad y la privacidad}
 \label{cha:tipos-sistemas}
-\section{Sistemas hardware}
-Consiste en aplicar impedimentos físicos y funciones de control como medida de prevención y contra medidas ante amenazas a recursos confidenciales, estos procedimientos son aplicados en equipos del hogar, oficinas y a servidores y cpds. Los principales sistemas hardware mas utilizados para garantizar la seguridad son:
+\section{Sistemas hardware:}
+Consiste en aplicar impedimentos físicos y funciones de control como medida de prevención y contra medidas ante amenazas a recursos confidenciales, estos procedimientos son aplicados en equipos del hogar, oficinas y a servidores y cpds.
 \begin{enumerate}
 \item {\bfseries RAID (Redundant Array of Independent Disk):}
-Es usado para crear un único volumen lógico, el cual físicamente esté compuesto por varios discos físicos. Dependiendo de qué modo de RAID utilicemos, esto nos servirá para conseguir un volumen con mayor seguridad contra fallos de hardware de los discos que lo componen gracias al almacenamiento redundante de estos o para conseguir simplemente un volumen de capacidad mayor. Los modos de raid que ofrecen una mayor seguridad del dispositivo son:
+Es usado para crear un único volumen lógico, el cual físicamente esté compuesto por varios discos físicos. Dependiendo de qué modo de RAID utilicemos, esto nos servirá para conseguir un volumen con mayor seguridad contra fallos de hardware de los discos que lo componen gracias al almacenamiento redundante de estos o para conseguir simplemente un volumen de capacidad mayor. Protegen la disponibilidad de la información.  Los modos de raid que ofrecen una mayor seguridad del dispositivo son:
 \begin{enumerate}
 \item {\bfseries RAID 1:}
 Para ello son necesarios al menos 2 discos de igual tamaño, se realiza una copia espejo es decir lo que de escribe en uno se copia en el otro permitiendo de esta forma que, aunque se produzca un fallo en uno de los 2 discos sigamos conservando la información en otro el disco.
@@ -506,10 +506,10 @@ Para ello son necesarios al menos 2 discos de igual tamaño, se realiza una copi
 En esta configuración necesitaremos mínimo 3 discos de la misma capacidad, la capacidad total de almacenamiento será la de todos los discos menos uno, es decir, dos y los datos se irán almacenando de forma parcialmente redundante permitiendo que, aunque suframos un fallo en uno de los discos, podamos seguir accediendo a toda la información. Este sistema es más eficiente que el RAID 1 debido a que en este solo tenemos la capacidad de almacenamiento de uno de los discos y en el RAID 5 tenemos la capacidad de dos, aunque la desventaja de este sistema es que requiere un disco más.
 \end{enumerate}
 \item {\bfseries Sistemas de Alimentación Ininterrumpida (SAI):}
-Son dispositivos que ofrecen protección contra apagones o irregularidades en la corriente eléctrica. Su principal función es suministrar la energía eléctrica que tienen acumuladas en sus baterías cuando se producen cortes eléctricos evitando así posibles fallos y averías en los sistemas conectados el evitan que se apaguen de forma repentina, además algunos SAI poseen un regulador de tensión que asegura estabilidad en la corriente logrando una alimentación de los dispositivos conectados más constante y así prolongando la vida útil de dichos sistemas.
+Son dispositivos que ofrecen protección contra apagones o irregularidades en la corriente eléctrica. Su principal función es suministrar la energía eléctrica que tienen acumuladas en sus baterías cuando se producen cortes eléctricos evitando así posibles fallos y averías en los sistemas conectados el evitan que se apaguen de forma repentina, además algunos SAI poseen un regulador de tensión que asegura estabilidad en la corriente logrando una alimentación de los dispositivos conectados más constante y así prolongando la vida útil de dichos sistemas. Protegen la disponibilidad de la información. 
 \item {\bfseries Firewall de hardware:}
 
-También conocido como cortafuegos se trata de un dispositivo que es capaz de bloquear comunicaciones no autorizadas, permitiendo las que si lo están. Los cortafuegos permiten una configuración para permitir y limitar el tráfico entre distintas redes o ámbitos de una red mediante un conjunto de reglas y normas. Sus principales características son el filtrado por aplicación, reglas de filtrado sobre el tráfico de entrada y salida de una red en una interfaz de red, filtrado de paquetes comprobando su MAC, IP o puerto destino y origen y almacenar el registro del filtrado de paquetes. También existe el firewall de software, la diferencia es que el cortafuegos de hardware se trata de un dispositivo dedicado únicamente como firewall y el de software no. Las arquitecturas de cortafuegos más implementadas son:
+También conocido como cortafuegos se trata de un dispositivo que es capaz de bloquear comunicaciones no autorizadas, permitiendo las que si lo están. Los cortafuegos permiten una configuración para permitir y limitar el tráfico entre distintas redes o ámbitos de una red mediante un conjunto de reglas y normas. Sus principales características son el filtrado por aplicación, reglas de filtrado sobre el tráfico de entrada y salida de una red en una interfaz de red, filtrado de paquetes comprobando su MAC, IP o puerto destino y origen y almacenar el registro del filtrado de paquetes. También existe el firewall de software, la diferencia es que el cortafuegos de hardware se trata de un dispositivo dedicado únicamente como firewall y el de software no. Protegen la integridad de la información.  Las arquitecturas de cortafuegos más implementadas son:
 \begin{enumerate}
 \item {\bfseries Screening router:}
  Un router hace de frontera entre la red pública y la red privada, realizando la función de cortafuegos.
@@ -521,7 +521,7 @@ Se trata de la combinación de un router como frontera y un servidor proxy que r
 Se crea una red intermedia entre la red externa y la red privada denominada DMZ o zona desmilitarizada en la que se localizan los servidores, teniendo un nivel de seguridad mayor en el cortafuegos de acceso a la red interna y uno menor en el cortafuegos hacia la red externa.
 \end{enumerate}
 \item {\bfseries Servidor proxy:}
-Consiste en un sistema que gestiona conexiones de red, haciendo de intermediario entre las peticiones de los servidores y los clientes, como FTP, DNS, https, etc., generando de tal forma una memoria caché con las diversas peticiones y respuestas de los servidores. Aunque su principal finalidad no es la seguridad sino que es servir más rápidamente a las conexiones siguientes que hayan sido solicitadas, añade funciones de autentificación y control de usuarios, reglas de filtrado de contenidos solicitados y un registro de logs. Los tipos de servidor proxy que ofrecen una mayor seguridad son:
+Consiste en un sistema que gestiona conexiones de red, haciendo de intermediario entre las peticiones de los servidores y los clientes, como FTP, DNS, https, etc., generando de tal forma una memoria caché con las diversas peticiones y respuestas de los servidores. Aunque su principal finalidad no es la seguridad sino que es servir más rápidamente a las conexiones siguientes que hayan sido solicitadas, añade funciones de autentificación y control de usuarios, reglas de filtrado de contenidos solicitados y un registro de logs. Protegen la disponibilidad e integridad de la información. Los tipos de servidor proxy que ofrecen una mayor seguridad son:
 \begin{enumerate}
 \item {\bfseries Proxy transparente:}
 Para el uso de este servidor proxy es necesario la configuración de cada cliente manualmente. Se encarga de redireccionar todas las conexiones al puerto 80 (http) hacia el puerto del servidor haciendo que estas conexiones sean más seguras.
@@ -534,8 +534,24 @@ Este servidor proxy aumenta la privacidad y el anonimato de los clientes mediant
  Consiste en un servidor proxy instalado en una red con varios servidores web y realizará en función de intermediario a las peticiones externas ofreciendo una capa de seguridad previa, además de distribuir la carga de las distintas peticiones externan y gestionar el SSL.
 \end{enumerate}
 \end{enumerate}
-\section{Sistemas software:}
-Es usada para garantizar la protección del software frente a ataques maliciosos de hackers, pérdida de información y otros riesgos.
+\section{Sistemas Software:}
+Son usados para garantizar la protección del software frente a ataques maliciosos de hackers, pérdida de información y otros riesgos de manera directa.
+\begin{enumerate}
+\item {\bfseries Cortafuegos:}
+Su funcionamiento es igual al del firewall de hardware con la única diferencia de qué el firewall de hardware consiste en un sistema únicamente dedicado cómo firewall y el de software simplemente se trata de una aplicación. Protege la integridad de la información. 
+
+\item {\bfseries Antivirus:}
+Se trata de una aplicación que es usada para prevenir, detectar y eliminar virus localizados en un sistema. Su funcionamiento consiste en la comparación de los archivos del sistema con los de una base de datos que contiene distintos tipos de malware conocidos, dichas bases de datos son actualizadas constantemente debido a que los hackers generan y propagan nuevos virus constantemente. Protege la integridad de la información.
+\item {\bfseries Encriptación (cifrado de datos):}
+Los datos son enmascarados con una clave especial qué es creada mediante un algoritmo matemático. Solamente el emisor y el receptor conocen la clave y a la llegada del mensaje se produce el descifrado. El cifrado de datos fortalece la confidencialidad. 
+\item {\bfseries Control de acceso:}
+se trata de la verificación de un usuario solicitando datos que solo debería de conocer el mismo, como un nombre de usuario y una contraseña. Protege la autenticidad de la información. 
+\item {\bfseries Firma digital:}
+Es usada en la transmisión de mensajes telemáticos y en la gestión de documentación como por ejemplo en las oficinas virtuales. Su objetivo es identificar de forma segura al equipo qué se hace cargo de la información. Protege la integridad y la confidencialidad de la información.
+\item {\bfseries Certificados digitales:}
+Se trata de documentos digitales mediante los que una entidad certificadora asegura que una persona es quien dice ser, mediante su clave pública. Protege la integridad y la confidencialidad de la información. 
+
+\end{enumerate}
 
 
 
