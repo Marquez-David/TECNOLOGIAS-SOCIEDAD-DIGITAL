@@ -467,7 +467,7 @@ de respuesta de forma que se evite cualquier réplica futura de la amenaza.
 %-------------------------------------------PARTE 6------------------------------------------------------------------------------------
 \chapter{Protección informática}
 \label{cha:proteccion-informatica}
-Antes de definir el concepto de protección informática debemos definir el concepto de información, que se define como el activo que tiene valor para alguna empresa o particular por lo que requiere una protección adecuada para garantizar la continuidad del negocio, minimizar daños de terceros y maximizar un entorno adecuado para inversiones y oportunidades de negocio. Sabiendo esto podemos definir como protección informática el conjunto de técnicas, herramientas, sistemas y procedimientos usados para proteger la información que se encuentra localizada en un sistema.
+Antes de definir el concepto de protección informática debemos definir el concepto de información, que se define como el activo que tiene valor para alguna empresa o particular por lo que requiere una protección adecuada para garantizar la continuidad del negocio, minimizar daños de terceros y maximizar un entorno adecuado para inversiones y oportunidades de negocio. Sabiendo esto podemos definir como protección informática el conjunto de técnicas, herramientas, sistemas y procedimientos usados para proteger la información que se encuentra localizada en un sistema.\cite{info},\cite{proteccion} 
 \section{Caraterísticas de la protección informática}
 Las cinco características que garantizan una buena protección informática son:
 \begin{enumerate}
@@ -480,7 +480,7 @@ Esta cualidad permite que los datos no sean accesibles a sistemas y personas no 
 \item {\bfseries Disponibilidad:}
 Como su nombre indica esta cualidad permite el acceso y la utilización cuando y donde sea de los servicios a través de un canal seguro. También se incluye que información eliminada sea recuperable en todo momento pudiendo evitar su pérdida o bloqueo. Esta característica es de las más importantes para las grandes empresas como Facebook y en hospitales y aeropuertos debido a que necesitan que sus servicios estén funcionando las 24 horas los 7 días de la semana.
 \item {\bfseries No repudio:}
-Consiste en la irrenunciabilidad por parte de la información de un emisor. Es muy similar a la autentificación, sin embargo, se diferencia en que la autentificación se centra en las personas implicadas y la cualidad de no repudio va enfocada frente a terceros. Un ejemplo de esta característica serían las firmas electrónicas, el proceso es bastante similar al de la criptografía simétrica usado en la confidencialidad, una persona crea un documento del que se obtiene el hash, este hash es encriptado con la clave privada dicha persona y el resultado de esto es la firma electrónica que es añadida al documento.
+Consiste en la irrenunciabilidad por parte de la información de un emisor. Es muy similar a la autentificación, sin embargo, se diferencia en que la autentificación se centra en las personas implicadas y la cualidad de no repudio va enfocada frente a terceros. Un ejemplo de esta característica serían las firmas electrónicas, el proceso es bastante similar al de la criptografía simétrica usado en la confidencialidad, una persona crea un documento del que se obtiene el hash, este hash es encriptado con la clave privada dicha persona y el resultado de esto es la firma electrónica que es añadida al documento.\cite{caracteristicasseguridad}
 \end{enumerate}
 \section{Tipo de seguridad en función del momento} 
 Dependiendo del momento en el que apliquemos medidas de seguridad podemos clasificarlas en: 
@@ -488,7 +488,7 @@ Dependiendo del momento en el que apliquemos medidas de seguridad podemos clasif
 \item {\bfseries Seguridad activa:}
 Se centra en prevenir y evitar daños a los sistemas ya sean de tipo hardware o software. Los mecanismos más frecuentes relacionados con este tipo de seguridad son por ejemplo los antivirus, la encriptación de datos, controles de acceso a salas, sistemas de redundancia de hardware. En conclusión, usaremos el término de seguridad activa para referirnos a técnicas para ser proactivos ante amenazas. 
 \item {\bfseries Seguridad pasiva:}
-La seguridad pasiva, no es lo contrario a la seguridad activa sino que es un complemento al que se recurre cuando las medidas de seguridad activa no han sido adecuadas para frenar una amenaza. Un ejemplo sencillo son las copias de seguridad aunque el hecho de realizar las copias de seguridad es poner en marcha una seguridad activa ya que nos anticipamos a la amenaza de perder nuestra información. Sin embargo, el hecho de recuperar un archivo de una copia de seguridad, pasa a ser seguridad activa debido a que una vez producido el daño, podemos solucionarlos. En este caso nos referiremos a la seguridad pasiva como una forma de ser reactivos actuando una vez se haya producido el daño.
+La seguridad pasiva, no es lo contrario a la seguridad activa sino que es un complemento al que se recurre cuando las medidas de seguridad activa no han sido adecuadas para frenar una amenaza. Un ejemplo sencillo son las copias de seguridad aunque el hecho de realizar las copias de seguridad es poner en marcha una seguridad activa ya que nos anticipamos a la amenaza de perder nuestra información. Sin embargo, el hecho de recuperar un archivo de una copia de seguridad, pasa a ser seguridad activa debido a que una vez producido el daño, podemos solucionarlos. En este caso nos referiremos a la seguridad pasiva como una forma de ser reactivos actuando una vez se haya producido el daño.\cite{activaypasiva}
  \end{enumerate}
 
 
@@ -497,6 +497,7 @@ La seguridad pasiva, no es lo contrario a la seguridad activa sino que es un com
 %-------------------------------------------PARTE 7------------------------------------------------------------------------------------
 \chapter{Sistemas utilizados para mantener la seguridad y la privacidad}
 \label{cha:tipos-sistemas}
+\cite{tiposseguridad}
 \section{Sistemas hardware:}
 Consiste en aplicar impedimentos físicos y funciones de control como medida de prevención y contra medidas ante amenazas a recursos confidenciales, estos procedimientos son aplicados en equipos del hogar, oficinas y a servidores y cpds.
 \begin{enumerate}
@@ -522,16 +523,17 @@ En esta configuración necesitaremos mínimo 3 discos de la misma capacidad, la 
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=3in]{raid5.png}
-  		   \caption{ RAID 5 \cite{ddos}}
+  		   \caption{ RAID 5 \cite{raid}}
   		   \label{img:raid5}
 \end{figure}
 
 \item {\bfseries Sistemas de Alimentación Ininterrumpida (SAI):}
-Son dispositivos que ofrecen protección contra apagones o irregularidades en la corriente eléctrica. Su principal función es suministrar la energía eléctrica que tienen acumuladas en sus baterías cuando se producen cortes eléctricos evitando así posibles fallos y averías en los sistemas conectados el evitan que se apaguen de forma repentina, además algunos SAI poseen un regulador de tensión que asegura estabilidad en la corriente logrando una alimentación de los dispositivos conectados más constante y así prolongando la vida útil de dichos sistemas. Protegen la disponibilidad de la información. 
+Son dispositivos que ofrecen protección contra apagones o irregularidades en la corriente eléctrica. Su principal función es suministrar la energía eléctrica que tienen acumuladas en sus baterías cuando se producen cortes eléctricos evitando así posibles fallos y averías en los sistemas conectados el evitan que se apaguen de forma repentina, además algunos SAI poseen un regulador de tensión que asegura estabilidad en la corriente logrando una alimentación de los dispositivos conectados más constante y así prolongando la vida útil de dichos sistemas. Protegen la disponibilidad de la información.\cite{sai}
+
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5.5in]{sais.png}
-  		   \caption{ Sistemas de alimentación ininterrumpida \cite{ddos}}
+  		   \caption{ Sistemas de alimentación ininterrumpida \cite{sai2}}
   		   \label{img:SAIS}
 \end{figure}
 \item {\bfseries Firewall de hardware:}
@@ -544,7 +546,7 @@ También conocido como cortafuegos se trata de un dispositivo que es capaz de bl
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{screening-router.png}
-  		   \caption{Arquitectura screening router \cite{ddos}}
+  		   \caption{Arquitectura screening router \cite{firewall}}
   		   \label{img:screening-router}
 \end{figure}
 
@@ -553,7 +555,7 @@ Un servidor con al menos dos interfaces de red divide la red pública de la red 
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{dual-homed-host.png}
-  		   \caption{Arquitectura dual homed host \cite{ddos}}
+  		   \caption{Arquitectura dual homed host \cite{firewall}}
   		   \label{img:dual-homed-host}
 \end{figure}
 \item {\bfseries Screened Host:}
@@ -561,7 +563,7 @@ Se trata de la combinación de un router como frontera y un servidor proxy que r
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{screened-host.png}
-  		   \caption{Arquitectura screened host \cite{ddos}}
+  		   \caption{Arquitectura screened host \cite{firewall}}
   		   \label{img:screened-host}
 \end{figure}
 \item {\bfseries Screened-subnet:}
@@ -569,7 +571,7 @@ Se crea una red intermedia entre la red externa y la red privada denominada DMZ 
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{screened-subnet.png}
-  		   \caption{Arquitectura screened subnet \cite{ddos}}
+  		   \caption{Arquitectura screened subnet \cite{firewall}}
   		   \label{img:screened-subnet}
 \end{figure}
 \end{enumerate}
@@ -579,12 +581,11 @@ Consiste en un sistema que gestiona conexiones de red, haciendo de intermediario
 \item {\bfseries Proxy transparente:}
 Para el uso de este servidor proxy es necesario la configuración de cada cliente manualmente. Se encarga de redireccionar todas las conexiones al puerto 80 (http) hacia el puerto del servidor haciendo que estas conexiones sean más seguras.
 \item {\bfseries Proxy anónimo:} 
-Este servidor proxy aumenta la privacidad y el anonimato de los clientes mediante una eliminación activa de característica identificativas como la dirección IP del cliente, cookies, identificadores de sesión, etc.
+Este servidor proxy aumenta la privacidad y el anonimato de los clientes mediante una eliminación activa de característica identificativas como la dirección IP del cliente, cookies, identificadores de sesión, etc.\cite{proxy2}
 \item {\bfseries Proxy caché web:}
-
--Proxy caché Web: Este proxy es usado específicamente para web y se encarga de hacer copias locales de los archivos más solicitados por los clientes.
+ Este proxy es usado específicamente para web y se encarga de hacer copias locales de los archivos más solicitados por los clientes.
 \item {\bfseries Proxy inverso:}
- Consiste en un servidor proxy instalado en una red con varios servidores web y realizará en función de intermediario a las peticiones externas ofreciendo una capa de seguridad previa, además de distribuir la carga de las distintas peticiones externan y gestionar el SSL.
+ Consiste en un servidor proxy instalado en una red con varios servidores web y realizará en función de intermediario a las peticiones externas ofreciendo una capa de seguridad previa, además de distribuir la carga de las distintas peticiones externan y gestionar el SSL.\cite{proxy}
 \end{enumerate}
 \end{enumerate}
 \section{Sistemas Software:}
@@ -594,7 +595,7 @@ Son usados para garantizar la protección del software frente a ataques malicios
 Su funcionamiento es igual al del firewall de hardware con la única diferencia de qué el firewall de hardware consiste en un sistema únicamente dedicado cómo firewall y el de software simplemente se trata de una aplicación. Protege la integridad de la información. 
 
 \item {\bfseries Antivirus:}
-Se trata de una aplicación que es usada para prevenir, detectar y eliminar virus localizados en un sistema. Su funcionamiento consiste en la comparación de los archivos del sistema con los de una base de datos que contiene distintos tipos de malware conocidos, dichas bases de datos son actualizadas constantemente debido a que los hackers generan y propagan nuevos virus constantemente. Protege la integridad de la información.
+Se trata de una aplicación que es usada para prevenir, detectar y eliminar virus localizados en un sistema. Su funcionamiento consiste en la comparación de los archivos del sistema con los de una base de datos que contiene distintos tipos de malware conocidos, dichas bases de datos son actualizadas constantemente debido a que los hackers generan y propagan nuevos virus constantemente. Protege la integridad de la información.\cite{antivirus}
 \item {\bfseries Encriptación (cifrado de datos):}
 Los datos son enmascarados con una clave especial qué es creada mediante un algoritmo matemático. Solamente el emisor y el receptor conocen la clave y a la llegada del mensaje se produce el descifrado. El cifrado de datos fortalece la confidencialidad. 
 \item {\bfseries Control de acceso:}
@@ -602,14 +603,9 @@ se trata de la verificación de un usuario solicitando datos que solo debería d
 \item {\bfseries Firma digital:}
 Es usada en la transmisión de mensajes telemáticos y en la gestión de documentación como por ejemplo en las oficinas virtuales. Su objetivo es identificar de forma segura al equipo qué se hace cargo de la información. Protege la integridad y la confidencialidad de la información.
 \item {\bfseries Certificados digitales:}
-Se trata de documentos digitales mediante los que una entidad certificadora asegura que una persona es quien dice ser, mediante su clave pública. Protege la integridad y la confidencialidad de la información. 
+Se trata de documentos digitales mediante los que una entidad certificadora asegura que una persona es quien dice ser, mediante su clave pública. Protege la integridad y la confidencialidad de la información. \cite{certificado}
 
 \end{enumerate}
-
-
-
-
-
 
 
 % fin del trabajo
