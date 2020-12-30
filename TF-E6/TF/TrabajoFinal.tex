@@ -81,47 +81,40 @@ tecnología como medio en la amenaza, pero aportaremos otras perspectivas a la h
 
 Una vulnerabilidad en términos informáticos es una debilidad o fallo en un sistema de información, como puede ser una aplicación o un servicio web, que permite a un atacante comprometer la integridad \footnote{Capacidad de un sistema para garantizar que los datos no han sido modificados desde su creación sin autorización, asegurando que la información es válida y consistente}, disponibilidad \footnote{Capacidad de un sistema para garantizar que este no va a sufrir caídas y que por tanto, el sistema y los datos van a estar disponibles al usuario en todo momento.} o confidencialidad \footnote{Capacidad de un sistema de garantizar que la información almacenada o transmitida por la red, solamente va a estar disponibles para aquellas personas autorizadas a la misma.} del mismo.
 
-\section{Vulnerabilidades y ataques más recurrentes:}
+\section{Vulnerabilidades más recurrentes:}
+En este apartado veremos aquellas vulnerabilidades más frecuentes tanto en empresas como en usuarios individuales. La mayoría de vulnerabilidades descritas a continuación se corresponden con los ciberataques definidos en el Capítulo \ref{cha:ciberataques-y-consecuencias}.
 
 En primer, lugar tenemos las vulnerabilidades Zero Day, se denominan así porque son aquellas 
 vulnerabilidades que han sido descubiertas recientemente. El principal problema de este tipo de 
 vulnerabilidades es que desde que se descubre hasta que se lanza un parche correctivo y los 
 usuarios lo instalan en sus equipos, los atacantes tienen vía libre para explotarla y sacar provecho 
-de esta. 
+de esta. Existen varios ejemplos de este tipo de vulnerabilidad, por ejemplo el ransomware que afectó a 
+multitud de equipos a partir del 2017.
 
-Existen varios ejemplos de este tipo de vulnerabilidad, por ejemplo el ransomware que afectó a 
-multitud de equipos a partir del 2017. Algunas empresas importantes, para tratar de evitar este 
-tipo de vulnerabilidades que suelen producirse a menudo en software recientemente desarrollado, 
-es hacer concursos invitando a grandes  expertos en ciberseguridad, ofreciendo grandes recompensas 
-a aquellos que descubran y resuelvan posibles vulnerabilidades que tenga dicho software.
+Cuando no se tiene un control acerca de la gestión de recursos, permitiendo que un sistema de información consuma un exceso que afecte a la disponibilidad de estos, se produce una vulnerabilidad conocida como error en la gestión de recursos. Un ejemplo típico de explotación de esta vulnerabilidad es el exigir constantemente recursos del sistema de información, cediendo la mayoría de estos a un único usuario, ralentizando o impidiendo el uso de esta al resto de usuarios.
 
-Error en la gestión de recursos:
-Este tipo de vulnerabilidad ocurre cuando no se tiene un control acerca de la gestión de recursos que puede utilizar un sistema de información, permitiendo que este consuma un exceso de recursos afectando a la disponibilidad de estos.
-Un ejemplo típico de explotación de esta vulnerabilidad es el exigir constantemente recursos del sistema de información, cediendo la mayoría de estos a un único usuario, ralentizando o impidiendo el uso de esta al resto de usuarios.
+También puede ocurrir que un sistema informático no tenga un control acerca de los datos que pueden entrar en el sistema de información, esta vulnerabilidad se conoce como validación de entrada. Entre los ataques que explotan esta vulnerabilidades nos encontramos con el ya conocidos SQL injection, explicado en el siguiente capítulo. Entre los daños principales que pueden llegar a causar este tipo de ataques nos encontramos con la destrucción de tablas o la extracción de información privada como contraseñas.
 
-Validación de entrada:
-Esta vulnerabilidad ocurre cuando no se tiene un control acerca de los datos que pueden entrar en el sistema de información.
-Entre los ataques que explotan esta vulnerabilidades nos encontramos con los ya conocidos SQL injection, que consiste en insertar código SQL malicioso en la base de datos de la víctima forzando a la base de datos a ejecutar dicha sentencia.
-Entre los daños principales que pueden llegar a causar este tipo de ataques nos encontramos con la destrucción de tablas o la extracción de información privada como contraseñas.
+\begin{figure}[tphb]
+  		   \centering
+     		   \includegraphics[width=5in]{vulnerabilidades.png}
+  		   \caption{Amenaza vs Vulneravilidad \cite{incibe2}}
+  		   \label{img:vulnerabilidades}
+\end{figure}
 
-Permisos, privilegios y/o control de acceso:
-Esta vulnerabilidad ocurre cuando no se tiene un control acerca de los privilegios o permisos que se les dan a los usuarios.
+Por último tenemos la vulnerabilidad conocida como control de acceso, esta vulnerabilidad ocurre cuando no se tiene un control acerca de los privilegios o permisos que se les dan a los usuarios.
 En varias ocasiones, las empresas han sufrido ataques ayudados o llevados a cabo por sus propios empleados causados de manera consentida o no.
 Si se les dan permisos a todos los empleados de la empresa por igual, podría ocurrir que algún empleado realizase acciones que causasen grandes daños irreversibles para la misma.
-Por ejemplo, algún empleado trabajando en bases de datos, podría sin querer eliminar algunos datos relevantes para la misma al introducir mal alguna instrucción.
 También ocurre frecuentemente que no todas las partes del sistema de información tienen el mismo nivel de ciberseguridad, por tanto, si se distribuye por igual los permisos o privilegios entre las diferentes partes de esta, será atacada por el punto más vulnerable.
-
-Vulnerabilidad de Cross Site Scripting(XSS): 
-Esta vulnerabilidad sucede cuando es posible ejecutar scripts de lenguajes como JavaScript.
-Consiste en la suplantación de un sitio web verdadero por otro que no lo es, pero que a nivel visual es idéntico al original.
-El ataque más conocido que aprovecha esta vulnerabilidad es el denominado Phising, que consiste en la obtención de los datos de los usuarios introducidos por ellos mismos.
-Un ejemplo frecuente de este tipo de ataques, se da a través de los emails, al usuario le llega un correo con una URL[5] que tiene un nombre semejante al nombre de su banco, el usuario al abrir el link se encuentra con un aspecto idéntico al de su banco habitual, por lo que introduce los datos, seguidamente estos datos son almacenados por el creador de dicho ataque y le redirige a la página web oficial introduciéndole los datos aportados por el usuario, de esta manera el usuario no sospecha que pueda ser algún tipo de ataque, ya que todo parece haber resultado con normalidad.
 
 \section{Clasificación de vulnerabilidades según gravedad y dificultad de tratamiento:}
 
+Es importante destacar, que los ordenadores personales normalmente no sufren ataques pese a tener algún tipo de vulnerabilidad, ya que resulta complicado obtener información lo suficientemente valiosa como para pedir un rescate por el mismo, o este no puede ser igual de cuantioso que el exigido a una empresa.
+En el caso de las empresas, sin embargo, es común tener un área destinada específicamente destinada a la ciberseguridad, ya que se tratan con datos sensibles \footnote{Son aquellos datos que están sujetos a condiciones de tratamiento específicas dictadas por el RGPD} de gran valor.
+
 \begin{enumerate}
 \item {\bfseries Gravedad baja: }
-Representa aquellas vulnerabilidades que tienen un impacto mínimo y que no presentan problemas para reducir este. En muchas ocasiones este tipo de vulnerabilidades no son tratadas, ya que puede ocurrir que implantar el sistema de seguridad para cubrir las mismas, sea más caro que cubrir las consecuencias de los ataques producidos por esta.
+Representa aquellas vulnerabilidades que tienen un impacto mínimo y que no presentan problemas para reducir este. En muchas ocasiones este tipo de vulnerabilidades no son tratadas, ya que puede ocurrir que implantar el sistema de seguridad para cubrir las mismas sea más caro que cubrir las consecuencias de los ataques producidos por esta.
 \item {\bfseries Gravedad media: }
 En este nivel se incluyen aquellas vulnerabilidades que son fáciles de solucionar pero que representan un impacto medio, normalmente pueden ser eliminadas mediante auditorías o configuraciones que se han establecido previamente en otros sistemas.
 \item {\bfseries Gravedad de gran importancia:}
@@ -129,19 +122,14 @@ En este grupo se incluyen aquellas vulnerabilidades que pueden ser explotadas pr
 \item {\bfseries Gravedad crítica: }
 Es el grupo de vulnerabilidades que conllevan mayores consecuencias al sistema. El ataque sobre este tipo de vulnerabilidad conlleva normalmente problemas no solo para el equipo a través del cual se descubre la vulnerabilidad, sino que lo expande por toda la red al que está conectado. Son ataques difíciles de detectar y que además, no necesitan que el usuario lleve a cabo algún tipo de acción para poder cumplir con su objetivo.
 \end{enumerate}
-Este tipo de vulnerabilidades son imprescindibles que sean cubiertas por el equipo de ciberseguridad.
-
-Como conclusión sobre este tema, es importante destacar, que los ordenadores personales normalmente no sufren ataques pese a tener algún tipo de vulnerabilidad, ya que resulta complicado obtener información lo suficientemente valiosa como para pedir un rescate por el mismo, o este no puede ser igual de cuantioso que el exigido a una empresa, por lo que en la mayoría de los casos es suficiente con tener las actualizaciones del sistema operativo y del antivirus al día para hacer frente a los más habituales.
-En el caso de las empresas, sin embargo, es común tener un área destinada específicamente destinada a la ciberseguridad, ya que se tratan con datos sensibles(Son aquellos datos que están sujetos a condiciones de tratamiento específicas dictadas por el RGPD) de gran valor. 
+Este tipo de vulnerabilidades son imprescindibles que sean cubiertas por el equipo de ciberseguridad , en Capítulo \ref{cha:planificacion-de-respuesta} se determina la planificación a seguir cuando una vulnerabilidad ha sido atacada.
 
 %-------------------------------------------PARTE 3------------------------------------------------------------------------------------
 \chapter{Sistemas de riesgo}
 \label{cha:sistemas-de-riesgo}
 
 Para determinar si un sistema informático es de riesgo, es necesario llevar a cabo un análisis de riesgo.
-El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo.\cite{wikip} 
-
-Según el BS ISO/IEC 27001:2005, la evaluación de riesgo incluye las siguientes actividades y acciones:
+El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo.\cite{wikip}  La evaluación de riesgo incluye las siguientes actividades y acciones:
 \begin{enumerate}
 \item {\bfseries Identificación de los activos:}
 Este proceso busca identificar los activos de la empresa.
@@ -269,11 +257,10 @@ no solo datos empresariales fundamentales, sino comprometer sitios web e interru
   		   \label{img:ciberataques}
 \end{figure}
 
-Tanto si el motivo es el espionaje como el sabotaje, los ciberdelincuentes emplean distintos métodos de ataque, algunos de ellos son el "spear-phishing",
- el ataque de inyección SQL, el filtro de scripts de sitios (XSS), los ataques de fuerza bruta... Una de las tácticas más perturbadora utilizada en los ciberataques 
+Tanto si el motivo es el espionaje como el sabotaje, los ciberdelincuentes emplean distintos métodos de ataque, algunos ya mostrados en la Figura \ref{img:ciberataques}, como "spear-phishing", el ataque de inyección SQL, el filtro de scripts de sitios (XSS) o los ataques de fuerza bruta para obtener todo tipo de información. Una de las tácticas más perturbadora utilizada en los ciberataques 
 es el ataque distribuido de denegación del servicio (DDoS), en el que se utilizan bots infectados para congestionar un sitio web o una aplicación web hasta el punto 
 de que los usuarios legítimos no pueden acceder a él, algo que cuesta a las empresas millones de dólares en ingresos, pérdida de productividad y daños en la reputación.\nocite{akamai}
-En este capitulo se mencionan algunos de los ciberataques mas conocidos, así como su funcionamiento y las consecuencias del mismo.
+En este capítulo se mencionan algunos de los ciberataques más conocidos, así como su funcionamiento y las consecuencias de los mismos.
 
 \section{Software malicioso: Malware}
 \label{sec:malware}
