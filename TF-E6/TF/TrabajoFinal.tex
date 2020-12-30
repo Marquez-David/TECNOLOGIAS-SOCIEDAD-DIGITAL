@@ -26,11 +26,11 @@
  {\bfseries \Large Resumen}
 \end{center}
 
-Aqui va el resumen
+La evolución digital de las empresas ha traído consigo muchos beneficios e innovación, pero también una mayor dependencia de sistemas de información, lo cual se traduce en un aumento considerable del riesgo de sufrir ciberataques.
 
+Si se quiere proteger de forma efectiva las organizaciones, hay otras vertientes de la seguridad que se deben vigilar, para cubrir no solo la parte tecnológica sino también la parte física, organizativa y legal. Y en este sentido, hay mucho recorrido de mejora ya que, en la actualidad, aún existe cierta desconexión entre la estrategia de seguridad de las empresas y su traducción en medidas y controles tecnológicos, mejor concienciación, cultura de la propia organización y su integración con los principales procesos de negocio.
 
-                  
-
+Empezaremos definiendo lo que significa el termino Ciberseguridad, así como expresar la importancia que tiene en cualquier ámbito. Hablaremos tanto de las vulnerabilidades como de los distintos sistemas de riesgo existentes. Al igual que vamos a hablar de las vulnerabilidades también hablaremos de los distintos ataques y sus consecuencias. Finalmente, definiremos como los distintos sistemas informáticos se protegen antes los ciberataques y como estos sistemas tratan de mantener la seguridad y privacidad de los mismos con el objetivo de perder la menor cantidad de información posible.
 
 
 %-------------------------------------------INDICE: SE VA HACIENDO SOLO------------------------------------------------------------------------------------
@@ -394,6 +394,13 @@ Mientras que las organizaciones durante estos últimos años han mejorado lentam
 de detectar y responder a los ciberataque, su capacidad de contener un ataque ha disminuido en un 
 13\% durante este mismo período según un estudio realizado por Cyber Resilient Organization Report.\cite{ibm-article}
 
+\begin{figure}[H]
+  		   \centering
+     		   \includegraphics[width=6in]{planif-respuesta.png}
+  		   \caption{Planificación de respuesta a indicentes \cite{plan-respuesta}.}
+  		   \label{img:planif-respuesta}
+\end{figure}
+
 Según la encuesta, los esfuerzos en materia de seguridad se vieron obstaculizados por el uso de 
 demasiadas herramientas, así como por la falta de planes estratégicos específicos para los tipos de 
 ataque más comunes. Aunque la planificación para la respuesta de seguridad está mejorando poco a 
@@ -451,7 +458,7 @@ de respuesta de forma que se evite cualquier réplica futura de la amenaza.
 %-------------------------------------------PARTE 6------------------------------------------------------------------------------------
 \chapter{Protección informática}
 \label{cha:proteccion-informatica}
-Antes de definir el concepto de protección informática, debemos definir el concepto de información, que se define como el activo que tiene valor para alguna empresa o particular, por lo que requiere una protección adecuada para garantizar la continuidad del negocio, minimizar daños de terceros y maximizar un entorno adecuado para inversiones y oportunidades de negocio. Sabiendo esto, podemos definir como protección informática el conjunto de técnicas, herramientas, sistemas y procedimientos usados para proteger la información que se encuentra localizada en un sistema.\cite{info},\cite{proteccion} 
+Antes de definir el concepto de protección informática, debemos definir el concepto de información, que se define como el activo que tiene valor para alguna empresa o particular, por lo que requiere una protección adecuada para garantizar la continuidad del negocio, minimizar daños de terceros y maximizar un entorno adecuado para inversiones y oportunidades de negocio.\cite{info}. Sabiendo esto, podemos definir como protección informática el conjunto de técnicas, herramientas, sistemas y procedimientos usados para proteger la información que se encuentra localizada en un sistema.\cite{proteccion} 
 \section{Caraterísticas de la protección informática}
 Las cinco características que garantizan una buena protección informática son:
 \begin{enumerate}
@@ -489,27 +496,27 @@ Consiste en aplicar impedimentos físicos y funciones de control como medida de 
 Es usado para crear un único volumen lógico, el cual físicamente esté compuesto por varios discos físicos. Dependiendo de qué modo de RAID utilicemos, nos servirán para conseguir un volumen con mayor seguridad contra fallos de hardware de los discos que lo componen gracias al almacenamiento redundante de estos o para conseguir simplemente un volumen de capacidad mayor. Protegen la disponibilidad de la información.  Los modos de RAID que ofrecen una mayor seguridad del dispositivo son:
 \begin{enumerate}
 \item {\bfseries RAID 1:}
-Para ello son necesarios al menos 2 discos de igual tamaño, se realiza una copia espejo, es decir, lo que se escribe en uno, se copia en el otro, permitiendo de esta forma que, aunque se produzca un fallo en uno de los 2 discos, sigamos conservando la información en el otro disco. Se muestra un ejemplo de como quedarían distribuidos los datos de este sistema en la Figura \ref{img:raid1}.
+Para ello son necesarios al menos 2 discos de igual tamaño, se realiza una copia espejo, es decir, lo que se escribe en uno, se copia en el otro, permitiendo de esta forma que, aunque se produzca un fallo en uno de los 2 discos, sigamos conservando la información en el otro disco. Se muestra un ejemplo de como quedarían distribuidos los datos de este sistema en la Figura \ref{f:raid1}.
 \item {\bfseries RAID 5:}
-En esta configuración necesitaremos mínimo 3 discos de la misma capacidad, la capacidad total de almacenamiento será la de todos los discos menos uno, es decir, dos y los datos se irán almacenando de forma parcialmente redundante permitiendo que, aunque suframos un fallo en uno de los discos, podamos seguir accediendo a toda la información. Este sistema es más eficiente que el RAID 1 debido a que en este solo tenemos la capacidad de almacenamiento de uno de los discos y en el RAID 5 tenemos la capacidad de dos, aunque la desventaja de este sistema es que requiere un disco más.Se muestra un ejemplo de como quedarían distribuidos los datos en disco en la Figura \ref{img:raid5}.
+En esta configuración necesitaremos mínimo 3 discos de la misma capacidad, la capacidad total de almacenamiento será la de todos los discos menos uno, es decir, dos y los datos se irán almacenando de forma parcialmente redundante permitiendo que, aunque suframos un fallo en uno de los discos, podamos seguir accediendo a toda la información. Este sistema es más eficiente que el RAID 1 debido a que en este solo tenemos la capacidad de almacenamiento de uno de los discos y en el RAID 5 tenemos la capacidad de dos, aunque la desventaja de este sistema es que requiere un disco más.Se muestra un ejemplo de como quedarían distribuidos los datos en disco en la Figura \ref{f:raid5}.
 \end{enumerate}
-\begin{figure}[tphb]
-  		   \centering
-     		   \includegraphics[width=2in]{raid1.png}
-  		   \caption{Volumen reflejado (RAID1) \cite{ddos}}
-  		   \label{img:raid1}
-\end{figure}
-\begin{figure}[tphb]
-  		   \centering
-     		   \includegraphics[width=3in]{raid5.png}
-  		   \caption{ RAID 5 \cite{raid}}
-  		   \label{img:raid5}
+
+\begin{figure}[H]
+ \centering
+  \subfloat[Volumen reflejado (RAID1) \cite{ddos}]{
+   \label{f:raid1}
+    \includegraphics[width=0.3\textwidth]{raid1.png}}
+  \subfloat[RAID 5 \cite{raid}]{
+   \label{f:raid5}
+    \includegraphics[width=0.6\textwidth]{raid5.png}}
+ \caption{Redundant Array of Independent Disk}
+ \label{f:raids}
 \end{figure}
 
 \item {\bfseries Sistemas de Alimentación Ininterrumpida (SAI):}
 Son dispositivos que ofrecen protección contra apagones o irregularidades en la corriente eléctrica. Su principal función es suministrar la energía eléctrica que tienen acumuladas en sus baterías cuando se producen cortes eléctricos, evitando así posibles fallos y averías en los sistemas conectados. Ádemás algunos SAI poseen un regulador de tensión que asegura estabilidad en la corriente logrando una alimentación de los dispositivos conectados más constante y prolongando así la vida útil de dichos sistemas. Protegen la disponibilidad de la información.\cite{sai}
 
-\begin{figure}[tphb]
+\begin{figure}[H]
   		   \centering
      		   \includegraphics[width=5.5in]{sais.png}
   		   \caption{ Sistemas de alimentación ininterrumpida \cite{sai2}}
@@ -521,31 +528,36 @@ También conocido como cortafuegos, se trata de un dispositivo que es capaz de b
 \begin{enumerate}
 \item {\bfseries Screening router:}
  Un router hace de frontera entre la red pública y la red privada, realizando la función de cortafuegos. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screening-router}.
-\item {\bfseries Dual Homed-Host:}
-Un servidor con al menos dos interfaces de red divide la red pública de la red privada y la función de firewall. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:dual-homed-host}.
-\item {\bfseries Screened Host:}
-Se trata de la combinación de un router como frontera y un servidor proxy que realizará las tareas de filtrado. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-host}.
-\item {\bfseries Screened-subnet:}
-Se crea una red intermedia entre la red externa y la red privada denominada DMZ o zona desmilitarizada en la que se localizan los servidores, teniendo un nivel de seguridad mayor en el cortafuegos de acceso a la red interna y uno menor en el cortafuegos hacia la red externa. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-subnet}.
-\begin{figure}[tphb]
+\begin{figure}[H]
   		   \centering
      		   \includegraphics[width=5in]{screening-router.png}
   		   \caption{Arquitectura screening router \cite{firewall}}
   		   \label{img:screening-router}
 \end{figure}
-\begin{figure}[tphb]
+
+\item {\bfseries Dual Homed-Host:}
+Un servidor con al menos dos interfaces de red divide la red pública de la red privada y la función de firewall. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:dual-homed-host}.
+\begin{figure}[H]
   		   \centering
      		   \includegraphics[width=5in]{dual-homed-host.png}
   		   \caption{Arquitectura dual homed host \cite{firewall}}
   		   \label{img:dual-homed-host}
 \end{figure}
-\begin{figure}[tphb]
+
+\item {\bfseries Screened Host:}
+Se trata de la combinación de un router como frontera y un servidor proxy que realizará las tareas de filtrado. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-host}.
+
+\begin{figure}[H]
   		   \centering
      		   \includegraphics[width=5in]{screened-host.png}
   		   \caption{Arquitectura screened host \cite{firewall}}
   		   \label{img:screened-host}
 \end{figure}
-\begin{figure}[tphb]
+
+\item {\bfseries Screened-subnet:}
+Se crea una red intermedia entre la red externa y la red privada denominada DMZ o zona desmilitarizada en la que se localizan los servidores, teniendo un nivel de seguridad mayor en el cortafuegos de acceso a la red interna y uno menor en el cortafuegos hacia la red externa. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-subnet}.
+
+\begin{figure}[H]
   		   \centering
      		   \includegraphics[width=5in]{screened-subnet.png}
   		   \caption{Arquitectura screened subnet \cite{firewall}}
