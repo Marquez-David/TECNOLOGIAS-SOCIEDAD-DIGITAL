@@ -79,21 +79,21 @@ tecnología como medio en la amenaza, pero aportaremos otras perspectivas a la h
 \chapter{Vulnerabilidades y ataques en los sistemas informáticos}
 \label{cha:vulneravilidades-y-ataques}
 
-Una vulnerabilidad en términos informáticos es una debilidad o fallo en un sistema de información, como puede ser una aplicación o un servicio web, que permite a un atacante comprometer la integridad \footnote{Capacidad de un sistema para garantizar que los datos no han sido modificados desde su creación sin autorización, asegurando que la información es válida y consistente}, disponibilidad \footnote{Capacidad de un sistema para garantizar que este no va a sufrir caídas y que por tanto, el sistema y los datos van a estar disponibles al usuario en todo momento.} o confidencialidad \footnote{Capacidad de un sistema de garantizar que la información almacenada o transmitida por la red, solamente va a estar disponibles para aquellas personas autorizadas a la misma.} del mismo.
+Una vulnerabilidad en términos informáticos es una debilidad o fallo en un sistema de información, como puede ser una aplicación o un servicio web, que permite a un atacante comprometer la integridad \footnote{Capacidad de un sistema para garantizar que los datos no han sido modificados desde su creación sin autorización, asegurando que la información es válida y consistente.}, disponibilidad \footnote{Capacidad de un sistema para garantizar que este no va a sufrir caídas y que por tanto, el sistema y los datos van a estar disponibles al usuario en todo momento.} o confidencialidad \footnote{Capacidad de un sistema de garantizar que la información almacenada o transmitida por la red, solamente va a estar disponibles para aquellas personas autorizadas a la misma.} del mismo.
 
 \section{Vulnerabilidades más recurrentes:}
 En este apartado veremos aquellas vulnerabilidades más frecuentes tanto en empresas como en usuarios individuales. La mayoría de vulnerabilidades descritas a continuación se corresponden con los ciberataques definidos en el Capítulo \ref{cha:ciberataques-y-consecuencias}.
 
-En primer, lugar tenemos las vulnerabilidades Zero Day, se denominan así porque son aquellas 
+En primer lugar, tenemos las vulnerabilidades Zero Day, se denominan así porque son aquellas 
 vulnerabilidades que han sido descubiertas recientemente. El principal problema de este tipo de 
 vulnerabilidades es que desde que se descubre hasta que se lanza un parche correctivo y los 
 usuarios lo instalan en sus equipos, los atacantes tienen vía libre para explotarla y sacar provecho 
-de esta. Existen varios ejemplos de este tipo de vulnerabilidad, por ejemplo el ransomware que afectó a 
+de esta. Existen varios ejemplos de este tipo de vulnerabilidad, por ejemplo, el ransomware que afectó a 
 multitud de equipos a partir del 2017.
 
-Cuando no se tiene un control acerca de la gestión de recursos, permitiendo que un sistema de información consuma un exceso que afecte a la disponibilidad de estos, se produce una vulnerabilidad conocida como error en la gestión de recursos. Un ejemplo típico de explotación de esta vulnerabilidad es el exigir constantemente recursos del sistema de información, cediendo la mayoría de estos a un único usuario, ralentizando o impidiendo el uso de esta al resto de usuarios.
+Cuando no se tiene un control acerca de la gestión de recursos, permitiendo que un sistema de información consuma un exceso que afecte a la disponibilidad de estos, se produce una vulnerabilidad conocida como error en la gestión de recursos. Un ejemplo típico de explotación de esta vulnerabilidad es el exigir constantemente recursos del sistema de información, cediendo la mayoría de estos a un único usuario, ralentizando o impidiendo el uso de estos al resto de usuarios.
 
-También puede ocurrir que un sistema informático no tenga un control acerca de los datos que pueden entrar en el sistema de información, esta vulnerabilidad se conoce como validación de entrada. Entre los ataques que explotan esta vulnerabilidades nos encontramos con el ya conocidos SQL injection, explicado en el siguiente capítulo. Entre los daños principales que pueden llegar a causar este tipo de ataques nos encontramos con la destrucción de tablas o la extracción de información privada como contraseñas.
+También puede ocurrir que un sistema informático no tenga un control acerca de los datos que pueden entrar en el sistema de información, esta vulnerabilidad se conoce como validación de entrada. Entre los ataques que explotan esta vulnerabilidades nos encontramos con el ya conocido SQL injection, explicado en el siguiente capítulo. Entre los daños principales que pueden llegar a causar este tipo de ataques nos encontramos con la destrucción de tablas o la extracción de información privada como contraseñas.
 
 \begin{figure}[tphb]
   		   \centering
@@ -102,34 +102,43 @@ También puede ocurrir que un sistema informático no tenga un control acerca de
   		   \label{img:vulnerabilidades}
 \end{figure}
 
-Por último tenemos la vulnerabilidad conocida como control de acceso, esta vulnerabilidad ocurre cuando no se tiene un control acerca de los privilegios o permisos que se les dan a los usuarios.
+Por último, tenemos la vulnerabilidad conocida como control de acceso, esta vulnerabilidad ocurre cuando no se tiene un control acerca de los privilegios o permisos que se les dan a los usuarios.
 En varias ocasiones, las empresas han sufrido ataques ayudados o llevados a cabo por sus propios empleados causados de manera consentida o no.
 Si se les dan permisos a todos los empleados de la empresa por igual, podría ocurrir que algún empleado realizase acciones que causasen grandes daños irreversibles para la misma.
 También ocurre frecuentemente que no todas las partes del sistema de información tienen el mismo nivel de ciberseguridad, por tanto, si se distribuye por igual los permisos o privilegios entre las diferentes partes de esta, será atacada por el punto más vulnerable.
 
 \section{Clasificación de vulnerabilidades según gravedad y dificultad de tratamiento:}
 
-Es importante destacar, que los ordenadores personales normalmente no sufren ataques pese a tener algún tipo de vulnerabilidad, ya que resulta complicado obtener información lo suficientemente valiosa como para pedir un rescate por el mismo, o este no puede ser igual de cuantioso que el exigido a una empresa.
+Es importante destacar que los ordenadores personales normalmente no sufren ataques pese a tener algún tipo de vulnerabilidad, ya que resulta complicado obtener información lo suficientemente valiosa como para pedir un rescate por esta, o este no puede ser igual de cuantioso que el exigido a una empresa.
 En el caso de las empresas, sin embargo, es común tener un área destinada específicamente destinada a la ciberseguridad, ya que se tratan con datos sensibles \footnote{Son aquellos datos que están sujetos a condiciones de tratamiento específicas dictadas por el RGPD} de gran valor.
 
 \begin{enumerate}
 \item {\bfseries Gravedad baja: }
-Representa aquellas vulnerabilidades que tienen un impacto mínimo y que no presentan problemas para reducir este. En muchas ocasiones este tipo de vulnerabilidades no son tratadas, ya que puede ocurrir que implantar el sistema de seguridad para cubrir las mismas sea más caro que cubrir las consecuencias de los ataques producidos por esta.
+Representa aquellas vulnerabilidades que tienen un impacto mínimo y que no presentan problemas para reducirlo. En muchas ocasiones este tipo de vulnerabilidades no son tratadas, ya que puede ocurrir que implantar el sistema de seguridad para cubrir las mismas sea más caro que cubrir las consecuencias de los ataques producidos por esta.
 \item {\bfseries Gravedad media: }
 En este nivel se incluyen aquellas vulnerabilidades que son fáciles de solucionar pero que representan un impacto medio, normalmente pueden ser eliminadas mediante auditorías o configuraciones que se han establecido previamente en otros sistemas.
 \item {\bfseries Gravedad de gran importancia:}
 En este grupo se incluyen aquellas vulnerabilidades que pueden ser explotadas produciendo un ataque rápido y de gran impacto sobre el sistema informático, normalmente este tipo de ataques tienen como objetivo buscar la pérdida de confidencialidad e integridad de los datos o recursos, además no suelen tener una solución previamente implantada.
 \item {\bfseries Gravedad crítica: }
 Es el grupo de vulnerabilidades que conllevan mayores consecuencias al sistema. El ataque sobre este tipo de vulnerabilidad conlleva normalmente problemas no solo para el equipo a través del cual se descubre la vulnerabilidad, sino que lo expande por toda la red al que está conectado. Son ataques difíciles de detectar y que además, no necesitan que el usuario lleve a cabo algún tipo de acción para poder cumplir con su objetivo.
-\end{enumerate}
 Este tipo de vulnerabilidades son imprescindibles que sean cubiertas por el equipo de ciberseguridad , en Capítulo \ref{cha:planificacion-de-respuesta} se determina la planificación a seguir cuando una vulnerabilidad ha sido atacada.
+\end{enumerate}
+
 
 %-------------------------------------------PARTE 3------------------------------------------------------------------------------------
 \chapter{Sistemas de riesgo}
 \label{cha:sistemas-de-riesgo}
-
 Para determinar si un sistema informático es de riesgo, es necesario llevar a cabo un análisis de riesgo.
-El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo.\cite{wikip}  La evaluación de riesgo incluye las siguientes actividades y acciones:
+\begin{center}
+    \begin{minipage}{0.9\linewidth}
+        \vspace{5pt}%margen superior de minipage
+        {\small
+El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo.\cite{wikip}
+        }
+        \vspace{5pt}%margen inferior de la minipage
+    \end{minipage}
+\end{center}
+La evaluación de riesgo incluye las siguientes actividades y acciones:
 \begin{enumerate}
 \item {\bfseries Identificación de los activos:}
 Este proceso busca identificar los activos de la empresa.
@@ -142,7 +151,7 @@ Este paso recoge la información acerca de la normativa que debe cumplimentar la
 \end{enumerate}
 
 A través de este análisis intentamos gestionar los posibles riesgos potenciales para prevenir este tipo de situaciones negativas para la actividad empresarial, recogiendo los factores fundamentales para su consecución en diferentes documentos según la metodología aplicada, que dependerá fundamentalmente de la actividad de la empresa:
-No se describen los pasos de las metodologías nombradas, ya que todas ellas cumplen con las exigencias de BS ISO/IEC 27001:2005 (descritas al comienzo del punto 3), y por tanto son semejantes, en vez de eso se mostrarán las metodologías existentes más importantes según la actividad de la empresa o por su característica más llamativa.
+No se describen los pasos de las metodologías nombradas, ya que todas ellas cumplen con las exigencias de BS ISO/IEC 27001:2005 (descritas al comienzo del punto 3), y por tanto son semejantes, en vez de eso, se mostrarán las metodologías existentes más importantes según la actividad de la empresa o por su característica más llamativa.
 
 
 \section{Metodologías principales para la evaluación de riesgos:}
@@ -171,7 +180,7 @@ Las herramientas que se muestran a continuación sirven de apoyo a las metodolog
 \item {\bfseries Matriz de riesgo:}
 Su función más importante es mostrar de manera resumida los riesgos, su probabilidad  y sus posibles soluciones de manera visual en una tabla, esta herramienta no se encarga de obtener estos datos, solo mostrarlos de manera gráfica.
 El objetivo de esta matriz es obtener una idea general de los riesgos de la empresa y la posibilidad de que estos ocurran de manera visual.\\
-Se muestra un ejemplo de esta herramienta en \ref{img:matriz_riesgo}
+Se muestra un ejemplo de esta herramienta en \ref{img:matriz_riesgo}.
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=7in]{matriz_de_riesgo.png}
@@ -257,7 +266,7 @@ no solo datos empresariales fundamentales, sino comprometer sitios web e interru
   		   \label{img:ciberataques}
 \end{figure}
 
-Tanto si el motivo es el espionaje como el sabotaje, los ciberdelincuentes emplean distintos métodos de ataque, algunos ya mostrados en la Figura \ref{img:ciberataques}, como "spear-phishing", el ataque de inyección SQL, el filtro de scripts de sitios (XSS) o los ataques de fuerza bruta para obtener todo tipo de información. Una de las tácticas más perturbadora utilizada en los ciberataques 
+Tanto si el motivo es el espionaje como el sabotaje, los ciberdelincuentes emplean distintos métodos de ataque, algunos ya mostrados en la Figura \ref{img:ciberataques}, como "spear-phishing", el ataque de inyección SQL, el filtro de scripts de sitios (XSS) o los ataques de fuerza bruta para obtener todo tipo de información. Una de las tácticas más perturbadoras utilizada en los ciberataques 
 es el ataque distribuido de denegación del servicio (DDoS), en el que se utilizan bots infectados para congestionar un sitio web o una aplicación web hasta el punto 
 de que los usuarios legítimos no pueden acceder a él, algo que cuesta a las empresas millones de dólares en ingresos, pérdida de productividad y daños en la reputación.\nocite{akamai}
 En este capítulo se mencionan algunos de los ciberataques más conocidos, así como su funcionamiento y las consecuencias de los mismos.
@@ -296,7 +305,7 @@ Se trata de un tipo de malware que secuestra los datos de cualquier dispositivo 
 El principio del phishing es relativamente sencillo, los estafadores crean correos electrónicos, páginas web e incluso mensajes cortos de carácter falso 
 que solicitan información de inicio de sesión de los usuarios. Es así como los estafadores se hacen con los datos de acceso para tiendas online, redes 
 sociales, espacios de almacenamiento en la nube y en el peor de los casos, se hacen incluso con información bancaria o datos de la tarjeta de crédito. 
-De esta forma, con una página web de phishing sencilla se pueden obtener datos sensibles, información que tiene un alto valor económico en el mercado 
+De esta forma, con una página web de phishing sencilla se pueden obtener datos sensibles e información que tiene un alto valor económico en el mercado 
 negro digital.
 
 A partir de los correos electrónicos,  los ciberdelincuentes acaban consiguiendo datos de acceso y contraseñas. No obstante, hoy en día, las 
@@ -357,7 +366,7 @@ con la vulnerabilidad XSS quien ejecutará ese código es el navegador del usuar
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{xss.png}
-  		   \caption{Cross site scripting \cite{xss}}
+  		   \caption{Cross site scripting \cite{xss}.}
   		   \label{img:xss}
 \end{figure}
 
@@ -385,7 +394,7 @@ En el caso de los ataques DDoS, se realizan peticiones o conexiones empleando un
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{ddos.png}
-  		   \caption{Ataque por denegacion de servicio \cite{ddos}}
+  		   \caption{Ataque por denegacion de servicio \cite{ddos}.}
   		   \label{img:ddos}
 \end{figure}
 
@@ -458,28 +467,28 @@ de respuesta de forma que se evite cualquier réplica futura de la amenaza.
 %-------------------------------------------PARTE 6------------------------------------------------------------------------------------
 \chapter{Protección informática}
 \label{cha:proteccion-informatica}
-Antes de definir el concepto de protección informática debemos definir el concepto de información, que se define como el activo que tiene valor para alguna empresa o particular por lo que requiere una protección adecuada para garantizar la continuidad del negocio, minimizar daños de terceros y maximizar un entorno adecuado para inversiones y oportunidades de negocio. Sabiendo esto podemos definir como protección informática el conjunto de técnicas, herramientas, sistemas y procedimientos usados para proteger la información que se encuentra localizada en un sistema.\cite{info},\cite{proteccion} 
+Antes de definir el concepto de protección informática, debemos definir el concepto de información, que se define como el activo que tiene valor para alguna empresa o particular, por lo que requiere una protección adecuada para garantizar la continuidad del negocio, minimizar daños de terceros y maximizar un entorno adecuado para inversiones y oportunidades de negocio. Sabiendo esto, podemos definir como protección informática el conjunto de técnicas, herramientas, sistemas y procedimientos usados para proteger la información que se encuentra localizada en un sistema.\cite{info},\cite{proteccion} 
 \section{Caraterísticas de la protección informática}
 Las cinco características que garantizan una buena protección informática son:
 \begin{enumerate}
-\item {\bfseries Autentificación:}
-Permite verificar que la identidad del propietario de un archivo mediante una referenciación en dicho documento. Esta cualidad genera que se pueda corroborar si alguien es quien dice ser, un ejemplo de este mecanismo es la autentificación mediante usuario y contraseña.
+\item {\bfseries Autenticación:}
+Permite verificar la identidad del propietario de un archivo mediante una referenciación en dicho documento. Esta cualidad genera que se pueda corroborar si alguien es quien dice ser, un ejemplo de este mecanismo es la autenticación mediante usuario y contraseña.
 \item {\bfseries Integridad:}
-Hace alusión a que la información no haya sido modifica y esté totalmente correcta sin que se hayan borrado o editado datos desde que fueron generados. Esto se logra mediante la generación de un hash, que se trata de la generación de un texto corto a partir del archivo original mediante funciones matemáticas. Si se compara el hash del archivo original con la del archivo actual y son iguales, significa que archivo sigue integro y no fue modificado, sin embargo, si son distintas implica que el archivo fue modificado.
+Hace alusión a que la información no haya sido modifica y esté totalmente correcta sin que se hayan borrado o editado datos desde que fueron generados. Esto se logra mediante la generación de un hash, que se trata de la generación de un texto corto a partir del archivo original mediante funciones matemáticas. Si se compara el hash del archivo original con la del archivo actual y son iguales, significa que el archivo sigue integro y no fue modificado, sin embargo, si son distintos implica que el archivo fue modificado.
 \item {\bfseries Confidencialidad:}
-Esta cualidad permite que los datos no sean accesibles a sistemas y personas no deseadas, haciendo que los datos estén cifrados y solo puedan ser legibles para las personas o sistemas autorizados. En el caso de que una persona no autorizada intercepte la información esta lo verá de una forma ilegible debido a que los datos estarán encriptados, esta cualidad se puede implementar mediante criptografía simétrica o asimétrica, en la criptografía simétrica tanto solo el emisor y receptor conocen una clave para desencriptar el archivo. Con la criptografía asimétrica el emisor tiene una clave privada que solo conoce el mismo y una clave pública ligada a la privada que conoce todo el mundo, el emisor encriptará los datos con su clave privada y el receptor los desencriptará con la clave pública del emisor.
+Esta cualidad permite que los datos no sean accesibles a sistemas y personas no deseadas, haciendo que los datos estén cifrados y solo puedan ser legibles para las personas o sistemas autorizados. En el caso de que una persona no autorizada intercepte la información esta lo verá de una forma ilegible debido a que los datos estarán encriptados, esta cualidad se puede implementar mediante criptografía simétrica o asimétrica, en la criptografía simétrica solo el emisor y receptor conocen una clave para desencriptar el archivo. Con la criptografía asimétrica el emisor tiene una clave privada que solo conoce el mismo y una clave pública, ligada a la privada, que conoce todo el mundo, el emisor encriptará los datos con su clave privada y el receptor los desencriptará con la clave pública del emisor.
 \item {\bfseries Disponibilidad:}
-Como su nombre indica esta cualidad permite el acceso y la utilización cuando y donde sea de los servicios a través de un canal seguro. También se incluye que información eliminada sea recuperable en todo momento pudiendo evitar su pérdida o bloqueo. Esta característica es de las más importantes para las grandes empresas como Facebook y en hospitales y aeropuertos debido a que necesitan que sus servicios estén funcionando las 24 horas los 7 días de la semana.
+Como su nombre indica esta cualidad permite el acceso y la utilización de los servicios cuando y donde sea a través de un canal seguro. También determina que información eliminada es recuperable en todo momento, pudiendo evitar su pérdida o bloqueo. Esta característica es de las más importantes para las grandes empresas u organizaciones como Facebook, hospitales y aeropuertos, debido a que necesitan que sus servicios estén funcionando las 24 horas los 7 días de la semana.
 \item {\bfseries No repudio:}
-Consiste en la irrenunciabilidad por parte de la información de un emisor. Es muy similar a la autentificación, sin embargo, se diferencia en que la autentificación se centra en las personas implicadas y la cualidad de no repudio va enfocada frente a terceros. Un ejemplo de esta característica serían las firmas electrónicas, el proceso es bastante similar al de la criptografía simétrica usado en la confidencialidad, una persona crea un documento del que se obtiene el hash, este hash es encriptado con la clave privada dicha persona y el resultado de esto es la firma electrónica que es añadida al documento.\cite{caracteristicasseguridad}
+Consiste en la irrenunciabilidad por parte de la información de un emisor. Es muy similar a la autenticación, sin embargo, se diferencia en que la autenticación se centra en las personas implicadas y la cualidad de no repudio va enfocada frente a terceros. Un ejemplo de esta característica serían las firmas electrónicas, el proceso es bastante similar al de la criptografía simétrica usado en la confidencialidad, una persona crea un documento del que se obtiene el hash, este hash es encriptado con la clave privada de dicha persona y el resultado de esto es la firma electrónica que es añadida al documento.\cite{caracteristicasseguridad}
 \end{enumerate}
 \section{Tipo de seguridad en función del momento} 
 Dependiendo del momento en el que apliquemos medidas de seguridad podemos clasificarlas en: 
 \begin{enumerate}
 \item {\bfseries Seguridad activa:}
-Se centra en prevenir y evitar daños a los sistemas ya sean de tipo hardware o software. Los mecanismos más frecuentes relacionados con este tipo de seguridad son por ejemplo los antivirus, la encriptación de datos, controles de acceso a salas, sistemas de redundancia de hardware. En conclusión, usaremos el término de seguridad activa para referirnos a técnicas para ser proactivos ante amenazas. 
+Se centra en prevenir y evitar daños a los sistemas ya sean de tipo hardware o software. Los mecanismos más frecuentes relacionados con este tipo de seguridad son por ejemplo los antivirus, la encriptación de datos, controles de acceso a salas o los sistemas de redundancia de hardware. En conclusión, usaremos el término de seguridad activa para referirnos a técnicas para ser proactivos ante amenazas. 
 \item {\bfseries Seguridad pasiva:}
-La seguridad pasiva, no es lo contrario a la seguridad activa sino que es un complemento al que se recurre cuando las medidas de seguridad activa no han sido adecuadas para frenar una amenaza. Un ejemplo sencillo son las copias de seguridad aunque el hecho de realizar las copias de seguridad es poner en marcha una seguridad activa ya que nos anticipamos a la amenaza de perder nuestra información. Sin embargo, el hecho de recuperar un archivo de una copia de seguridad, pasa a ser seguridad activa debido a que una vez producido el daño, podemos solucionarlos. En este caso nos referiremos a la seguridad pasiva como una forma de ser reactivos actuando una vez se haya producido el daño.\cite{activaypasiva}
+La seguridad pasiva, no es lo contrario a la seguridad activa, sino que es un complemento al que se recurre cuando las medidas de seguridad activas no han sido adecuadas para frenar una amenaza. Un ejemplo de seguridad pasiva son las copias de seguridad, aunque el hecho de realizar las copias de seguridad es poner en marcha una seguridad activa ya que nos anticipamos a la amenaza de perder nuestra información. Sin embargo, el hecho de recuperar un archivo de una copia de seguridad, pasa a ser seguridad activa debido a que una vez producido el daño, podemos solucionarlos. En este caso nos referiremos a la seguridad pasiva como una forma de ser reactivos actuando una vez se haya producido el daño.\cite{activaypasiva}
  \end{enumerate}
 
 
@@ -489,14 +498,14 @@ La seguridad pasiva, no es lo contrario a la seguridad activa sino que es un com
 \chapter{Sistemas utilizados para mantener la seguridad y la privacidad}
 \label{cha:tipos-sistemas}
 Debido a la gran cantidad amenazas que hay en las conexiones a internet,  la protección informática se ha convertido en un pilar fundamental para cualquier empresa\cite{tiposseguridad}. Dependiendo de la naturaleza del sistema, podemos clasificarlos en:
-\section{Sistemas hardware:}
-Consiste en aplicar impedimentos físicos y funciones de control como medida de prevención y contra medidas ante amenazas a recursos confidenciales, estos procedimientos son aplicados en equipos del hogar, oficinas y a servidores y cpds.
+\section{Sistemas hardware}
+Consiste en aplicar impedimentos físicos y funciones de control como medida de prevención y contra medidas ante amenazas a recursos confidenciales, estos procedimientos son aplicados en equipos del hogar, oficinas, servidores y cpds.
 \begin{enumerate}
 \item {\bfseries RAID (Redundant Array of Independent Disk):}
-Es usado para crear un único volumen lógico, el cual físicamente esté compuesto por varios discos físicos. Dependiendo de qué modo de RAID utilicemos, esto nos servirá para conseguir un volumen con mayor seguridad contra fallos de hardware de los discos que lo componen gracias al almacenamiento redundante de estos o para conseguir simplemente un volumen de capacidad mayor. Protegen la disponibilidad de la información.  Los modos de raid que ofrecen una mayor seguridad del dispositivo son:
+Es usado para crear un único volumen lógico, el cual físicamente esté compuesto por varios discos físicos. Dependiendo de qué modo de RAID utilicemos, nos servirán para conseguir un volumen con mayor seguridad contra fallos de hardware de los discos que lo componen gracias al almacenamiento redundante de estos o para conseguir simplemente un volumen de capacidad mayor. Protegen la disponibilidad de la información.  Los modos de RAID que ofrecen una mayor seguridad del dispositivo son:
 \begin{enumerate}
 \item {\bfseries RAID 1:}
-Para ello son necesarios al menos 2 discos de igual tamaño, se realiza una copia espejo es decir lo que de escribe en uno se copia en el otro permitiendo de esta forma que, aunque se produzca un fallo en uno de los 2 discos sigamos conservando la información en otro el disco.Se muestra un ejemplo de como quedarían distribuidos los datos en disco en la Figura \ref{img:raid1}.
+Para ello son necesarios al menos 2 discos de igual tamaño, se realiza una copia espejo, es decir, lo que se escribe en uno, se copia en el otro, permitiendo de esta forma que, aunque se produzca un fallo en uno de los 2 discos, sigamos conservando la información en el otro disco. Se muestra un ejemplo de como quedarían distribuidos los datos de este sistema en la Figura \ref{img:raid1}.
 \item {\bfseries RAID 5:}
 En esta configuración necesitaremos mínimo 3 discos de la misma capacidad, la capacidad total de almacenamiento será la de todos los discos menos uno, es decir, dos y los datos se irán almacenando de forma parcialmente redundante permitiendo que, aunque suframos un fallo en uno de los discos, podamos seguir accediendo a toda la información. Este sistema es más eficiente que el RAID 1 debido a que en este solo tenemos la capacidad de almacenamiento de uno de los discos y en el RAID 5 tenemos la capacidad de dos, aunque la desventaja de este sistema es que requiere un disco más.Se muestra un ejemplo de como quedarían distribuidos los datos en disco en la Figura \ref{img:raid5}.
 \end{enumerate}
@@ -514,7 +523,7 @@ En esta configuración necesitaremos mínimo 3 discos de la misma capacidad, la 
 \end{figure}
 
 \item {\bfseries Sistemas de Alimentación Ininterrumpida (SAI):}
-Son dispositivos que ofrecen protección contra apagones o irregularidades en la corriente eléctrica. Su principal función es suministrar la energía eléctrica que tienen acumuladas en sus baterías cuando se producen cortes eléctricos evitando así posibles fallos y averías en los sistemas conectados el evitan que se apaguen de forma repentina, además algunos SAI poseen un regulador de tensión que asegura estabilidad en la corriente logrando una alimentación de los dispositivos conectados más constante y así prolongando la vida útil de dichos sistemas. Protegen la disponibilidad de la información.\cite{sai}
+Son dispositivos que ofrecen protección contra apagones o irregularidades en la corriente eléctrica. Su principal función es suministrar la energía eléctrica que tienen acumuladas en sus baterías cuando se producen cortes eléctricos, evitando así posibles fallos y averías en los sistemas conectados. Ádemás algunos SAI poseen un regulador de tensión que asegura estabilidad en la corriente logrando una alimentación de los dispositivos conectados más constante y prolongando así la vida útil de dichos sistemas. Protegen la disponibilidad de la información.\cite{sai}
 
 \begin{figure}[tphb]
   		   \centering
@@ -524,16 +533,16 @@ Son dispositivos que ofrecen protección contra apagones o irregularidades en la
 \end{figure}
 
 \item {\bfseries Firewall de hardware:}
-También conocido como cortafuegos se trata de un dispositivo que es capaz de bloquear comunicaciones no autorizadas, permitiendo las que si lo están. Los cortafuegos permiten una configuración para permitir y limitar el tráfico entre distintas redes o ámbitos de una red mediante un conjunto de reglas y normas. Sus principales características son el filtrado por aplicación, reglas de filtrado sobre el tráfico de entrada y salida de una red en una interfaz de red, filtrado de paquetes comprobando su MAC, IP o puerto destino y origen y almacenar el registro del filtrado de paquetes. También existe el firewall de software, la diferencia es que el cortafuegos de hardware se trata de un dispositivo dedicado únicamente como firewall y el de software no. Protegen la integridad de la información.  Las arquitecturas de cortafuegos más implementadas son:
+También conocido como cortafuegos, se trata de un dispositivo que es capaz de bloquear comunicaciones no autorizadas, permitiendo las que si lo están. Los cortafuegos permiten una configuración para permitir y limitar el tráfico entre distintas redes o ámbitos de una red mediante un conjunto de reglas y normas. Sus principales características son el filtrado por aplicación, reglas de filtrado sobre el tráfico de entrada y salida de una red en una interfaz de red, filtrado de paquetes comprobando su MAC, IP o puerto destino y origen y almacenar el registro del filtrado de paquetes. También existe el firewall de software, la diferencia es que el cortafuegos de hardware se trata de un dispositivo dedicado únicamente como firewall y el de software no. Protegen la integridad de la información.  Las arquitecturas de cortafuegos más implementadas son:
 \begin{enumerate}
 \item {\bfseries Screening router:}
- Un router hace de frontera entre la red pública y la red privada, realizando la función de cortafuegos.Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screening-router}.
+ Un router hace de frontera entre la red pública y la red privada, realizando la función de cortafuegos. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screening-router}.
 \item {\bfseries Dual Homed-Host:}
-Un servidor con al menos dos interfaces de red divide la red pública de la red privada y la función de firewall.Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:dual-homed-host}.
+Un servidor con al menos dos interfaces de red divide la red pública de la red privada y la función de firewall. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:dual-homed-host}.
 \item {\bfseries Screened Host:}
-Se trata de la combinación de un router como frontera y un servidor proxy que realizará las tareas de filtrado.Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-host}.
+Se trata de la combinación de un router como frontera y un servidor proxy que realizará las tareas de filtrado. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-host}.
 \item {\bfseries Screened-subnet:}
-Se crea una red intermedia entre la red externa y la red privada denominada DMZ o zona desmilitarizada en la que se localizan los servidores, teniendo un nivel de seguridad mayor en el cortafuegos de acceso a la red interna y uno menor en el cortafuegos hacia la red externa.Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-subnet}.
+Se crea una red intermedia entre la red externa y la red privada denominada DMZ o zona desmilitarizada en la que se localizan los servidores, teniendo un nivel de seguridad mayor en el cortafuegos de acceso a la red interna y uno menor en el cortafuegos hacia la red externa. Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-subnet}.
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{screening-router.png}
@@ -560,7 +569,7 @@ Se crea una red intermedia entre la red externa y la red privada denominada DMZ 
 \end{figure}
 \end{enumerate}
 \item {\bfseries Servidor proxy:}
-Consiste en un sistema que gestiona conexiones de red, haciendo de intermediario entre las peticiones de los servidores y los clientes, como FTP, DNS, https, etc., generando de tal forma una memoria caché con las diversas peticiones y respuestas de los servidores. Aunque su principal finalidad no es la seguridad sino que es servir más rápidamente a las conexiones siguientes que hayan sido solicitadas, añade funciones de autentificación y control de usuarios, reglas de filtrado de contenidos solicitados y un registro de logs. Protegen la disponibilidad e integridad de la información. Los tipos de servidor proxy que ofrecen una mayor seguridad son:
+Consiste en un sistema que gestiona conexiones de red, haciendo de intermediario entre las peticiones de los servidores y los clientes, como FTP, DNS, https, etc., generando de tal forma una memoria caché con las diversas peticiones y respuestas de los servidores. Aunque su principal finalidad no es la seguridad, sino servir más rápidamente a las conexiones siguientes que hayan sido solicitadas, añade funciones de autenticación y control de usuarios, reglas de filtrado de contenidos solicitados y un registro de logs. Protegen la disponibilidad e integridad de la información. Los tipos de servidor proxy que ofrecen una mayor seguridad son:
 \begin{enumerate}
 \item {\bfseries Proxy transparente:}
 Para el uso de este servidor proxy es necesario la configuración de cada cliente manualmente. Se encarga de redireccionar todas las conexiones al puerto 80 (http) hacia el puerto del servidor haciendo que estas conexiones sean más seguras.
@@ -569,14 +578,14 @@ Este servidor proxy aumenta la privacidad y el anonimato de los clientes mediant
 \item {\bfseries Proxy caché web:}
  Este proxy es usado específicamente para web y se encarga de hacer copias locales de los archivos más solicitados por los clientes.
 \item {\bfseries Proxy inverso:}
- Consiste en un servidor proxy instalado en una red con varios servidores web y realizará en función de intermediario a las peticiones externas ofreciendo una capa de seguridad previa, además de distribuir la carga de las distintas peticiones externan y gestionar el SSL.\cite{proxy}
+ Consiste en un servidor proxy instalado en una red con varios servidores web, su función será hacer de intermediario a las peticiones externas ofreciendo una capa de seguridad previa, además de distribuir la carga de las distintas peticiones externas y gestionar el SSL.\cite{proxy}
 \end{enumerate}
 \end{enumerate}
-\section{Sistemas Software:}
+\section{Sistemas Software}
 Son usados para garantizar la protección del software frente a ataques maliciosos de hackers, pérdida de información y otros riesgos de manera directa.
 \begin{enumerate}
 \item {\bfseries Cortafuegos:}
-Su funcionamiento es igual al del firewall de hardware con la única diferencia de qué el firewall de hardware consiste en un sistema únicamente dedicado cómo firewall y el de software simplemente se trata de una aplicación. Protege la integridad de la información. 
+Su funcionamiento es igual al del firewall de hardware, con la diferencia de que el firewall de hardware consiste en un sistema únicamente dedicado cómo firewall y el de software simplemente se trata de una aplicación. Protege la integridad de la información. 
 
 \item {\bfseries Antivirus:}
 Se trata de una aplicación que es usada para prevenir, detectar y eliminar virus localizados en un sistema. Su funcionamiento consiste en la comparación de los archivos del sistema con los de una base de datos que contiene distintos tipos de malware conocidos, dichas bases de datos son actualizadas constantemente debido a que los hackers generan y propagan nuevos virus constantemente. Protege la integridad de la información.\cite{antivirus}
@@ -585,9 +594,9 @@ Los datos son enmascarados con una clave especial qué es creada mediante un alg
 \item {\bfseries Control de acceso:}
 se trata de la verificación de un usuario solicitando datos que solo debería de conocer el mismo, como un nombre de usuario y una contraseña. Protege la autenticidad de la información. 
 \item {\bfseries Firma digital:}
-Es usada en la transmisión de mensajes telemáticos y en la gestión de documentación como por ejemplo en las oficinas virtuales. Su objetivo es identificar de forma segura al equipo qué se hace cargo de la información. Protege la integridad y la confidencialidad de la información.
+Es usada en la transmisión de mensajes telemáticos y en la gestión de documentación, como por ejemplo, en las oficinas virtuales. Su objetivo es identificar de forma segura al equipo qué se hace cargo de la información. Protege la integridad y la confidencialidad de la información.
 \item {\bfseries Certificados digitales:}
-Se trata de documentos digitales mediante los que una entidad certificadora asegura que una persona es quien dice ser, mediante su clave pública. Protege la integridad y la confidencialidad de la información. \cite{certificado}
+Se trata de documentos digitales mediante los cuales una entidad certificadora asegura que una persona es quien dice ser mediante su clave pública. Protege la integridad y la confidencialidad de la información. \cite{certificado}
 
 \end{enumerate}
 
