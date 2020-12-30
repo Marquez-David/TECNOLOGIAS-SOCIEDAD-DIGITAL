@@ -129,15 +129,9 @@ Este tipo de vulnerabilidades son imprescindibles que sean cubiertas por el equi
 \chapter{Sistemas de riesgo}
 \label{cha:sistemas-de-riesgo}
 Para determinar si un sistema informático es de riesgo, es necesario llevar a cabo un análisis de riesgo.
-\begin{center}
-    \begin{minipage}{0.9\linewidth}
-        \vspace{5pt}%margen superior de minipage
-        {\small
-El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo.\cite{wikip}
-        }
-        \vspace{5pt}%margen inferior de la minipage
-    \end{minipage}
-\end{center}
+
+\emph{El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo.\cite{wikip}}
+        
 La evaluación de riesgo incluye las siguientes actividades y acciones:
 \begin{enumerate}
 \item {\bfseries Identificación de los activos:}
@@ -150,11 +144,10 @@ Este paso recoge la información acerca de la normativa que debe cumplimentar la
 \item {\bfseries Evaluación de los riesgos frente a una escala de riesgo preestablecidos.}
 \end{enumerate}
 
-A través de este análisis intentamos gestionar los posibles riesgos potenciales para prevenir este tipo de situaciones negativas para la actividad empresarial, recogiendo los factores fundamentales para su consecución en diferentes documentos según la metodología aplicada, que dependerá fundamentalmente de la actividad de la empresa:
-No se describen los pasos de las metodologías nombradas, ya que todas ellas cumplen con las exigencias de BS ISO/IEC 27001:2005 (descritas al comienzo del punto 3), y por tanto son semejantes, en vez de eso, se mostrarán las metodologías existentes más importantes según la actividad de la empresa o por su característica más llamativa.
-
+A través de este análisis se intentan gestionar los posibles riesgos potenciales para prevenir este tipo de situaciones negativas para la actividad empresarial, recogiendo los factores fundamentales para su consecución en diferentes documentos según la metodología aplicada, que dependerá fundamentalmente de la actividad de la empresa.
 
 \section{Metodologías principales para la evaluación de riesgos:}
+Así como en el apartado anterior se comentaron las distintas acciones y actividades para la evaluación de riesgos, en este apartado se comentarán las principales metodologías principales para la evaluación de riesgos.
 
 \begin{enumerate}
 \item {\bfseries ARLI-CIB:}
@@ -178,73 +171,64 @@ Las herramientas que se muestran a continuación sirven de apoyo a las metodolog
 \begin{enumerate}
 
 \item {\bfseries Matriz de riesgo:}
-Su función más importante es mostrar de manera resumida los riesgos, su probabilidad  y sus posibles soluciones de manera visual en una tabla, esta herramienta no se encarga de obtener estos datos, solo mostrarlos de manera gráfica.
-El objetivo de esta matriz es obtener una idea general de los riesgos de la empresa y la posibilidad de que estos ocurran de manera visual.\\
-Se muestra un ejemplo de esta herramienta en \ref{img:matriz_riesgo}.
+Su función más importante es mostrar de manera resumida los riesgos, su probabilidad  y sus posibles soluciones de manera visual en una tabla, esta herramienta no se encarga de obtener estos datos, solo mostrarlos de manera gráfica. El objetivo de esta matriz es obtener una idea general de los riesgos de la empresa y la posibilidad de que estos ocurran de manera visual.\\
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=7in]{matriz_de_riesgo.png}
   		   \caption{Matriz de riesgo}
   		   \label{img:matriz_riesgo}
 \end{figure}
+
 \item {\bfseries Check-lists:}
 Es una técnica que permite identificar los riesgos de una manera simple, proporcionando una lista de incertidumbres típicas a considerar.
 
 \item {\bfseries SWIFT:}
 Al igual que check-lists, sirve para identificar riesgos.
 \item {\bfseries Análisis de árbol de fallas:}
-Esta técnica se inicia viendo cómo se comporta algunos de los recursos del sistema de información ante un evento no deseado, y determina todas las maneras en las que este podría ocurrir, se representa gráficamente en un diagrama de árbol lógico.\\
-Se muestra un ejemplo de esta herramienta en Figura \ref{img:diagrama_arbol_de_fallas} \cite{daf}.
+Esta técnica se inicia viendo cómo se comporta algunos de los recursos del sistema de información ante un evento no deseado, y determina todas las maneras en las que este podría ocurrir, se representa gráficamente en un diagrama de árbol lógico.
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{diagrama-arbol-fallas.png}
-  		   \caption{Diagrama árbol de fallas}
+  		   \caption{Diagrama árbol de fallas \cite{daf}}
   		   \label{img:diagrama_arbol_de_fallas}
 \end{figure}
 \item {\bfseries Diagrama causa-efecto:}
-Esta herramienta permite conocer la raíz de un problema y cuellos de botella en procesos. Se representa mediante un diagrama denominado espina de pescado.\\
-Se muestra un ejemplo de esta herramienta en Figura \ref{img:diagrama_causa_efecto} \cite{diagrama-pescado}.
+Esta herramienta permite conocer la raíz de un problema y cuellos de botella en procesos. Se representa mediante un diagrama denominado espina de pescado.
 \begin{figure}[tphb]
   		   \centering
-     		   \includegraphics[width=5in]{diagrama-causa-efecto.jpg}
-  		   \caption{Diagrama causa-efecto}
+     		   \includegraphics[width=6in]{diagrama-causa-efecto.jpg}
+  		   \caption{Diagrama causa-efecto \cite{diagrama-pescado}}
   		   \label{img:diagrama_causa_efecto}
 \end{figure}
 
 \item {\bfseries AMFE:}
-Esta técnica identifica y analiza los fallos potenciales, mecanismos y los efectos de esos fallos. \\
-Se muestra un ejemplo de esta herramienta en Figura \ref{img:amfe} \cite{amfe}.
+Esta técnica identifica y analiza los fallos potenciales, mecanismos y los efectos de esos fallos.
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=7in]{AMFE.jpg}
-  		   \caption{AMFE}
+  		   \caption{AMFE \cite{amfe}}
   		   \label{img:amfe}
 \end{figure}
 
 \item {\bfseries HAZOP:}
-Esta herramienta tiene como objetivo detectar situaciones de inseguridad en plantas industriales, debido a la operación o a los procesos productivos.\\
-Se muestra un ejemplo de esta herramienta en Figura \ref{img:hazop} \cite{hazop}.
-\begin{figure}[tphb]
+Esta herramienta tiene como objetivo detectar situaciones de inseguridad en plantas industriales, debido a la operación o a los procesos productivos.
+\begin{figure}[H]
   		   \centering
-     		   \includegraphics[width=5in]{hazop.jpg}
-  		   \caption{HAZOP}
+     		   \includegraphics[width=6in]{hazop.jpg}
+  		   \caption{HAZOP \cite{hazop}}
   		   \label{img:hazop}
 \end{figure}
 
 \item {\bfseries LOPA:}
-Permite la evaluación de controles, así como la determinación de su eficacia.\\
-Se muestra un ejemplo de esta herramienta en Figura \ref{img:lopa} \cite{lopa}.
-\begin{figure}[tphb]
+Permite la evaluación de controles, así como la determinación de su eficacia.
+\begin{figure}[H]
   		   \centering
      		   \includegraphics[width=4in]{LOPA.png}
-  		   \caption{LOPA}
+  		   \caption{LOPA \cite{lopa}}
   		   \label{img:lopa}
 \end{figure}
 
 \end{enumerate}
-
-
-
 
 %-------------------------------------------PARTE 4-----------------------------------------------------------------------------------
 \chapter{Ciberataques y sus consecuencias}
@@ -271,7 +255,7 @@ es el ataque distribuido de denegación del servicio (DDoS), en el que se utiliz
 de que los usuarios legítimos no pueden acceder a él, algo que cuesta a las empresas millones de dólares en ingresos, pérdida de productividad y daños en la reputación.\nocite{akamai}
 En este capítulo se mencionan algunos de los ciberataques más conocidos, así como su funcionamiento y las consecuencias de los mismos.
 
-\section{Software malicioso: Malware}
+\section{Malware}
 \label{sec:malware}
 
 La palabra malware viene del inglés, y es el resultado de la unión de las palabras malicious software(software malicioso). Se trata de un tipo de software o de aplicación que tiene como objetivo hacer daño al dispositivo en el que se ha conseguido alojar, instalar o infiltrar, ya sea un ordenador, un teléfono móvil… 
