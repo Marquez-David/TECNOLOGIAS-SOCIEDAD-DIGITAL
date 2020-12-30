@@ -79,39 +79,43 @@ tecnología como medio en la amenaza, pero aportaremos otras perspectivas a la h
 \chapter{Vulnerabilidades y ataques en los sistemas informáticos}
 \label{cha:vulneravilidades-y-ataques}
 
-Una vulnerabilidad en términos informáticos es una debilidad o fallo en un sistema de información, como puede ser una aplicación o un servicio web, que permite a un atacante comprometer la integridad (capacidad que tiene un sistema de información para garantizar que los datos no han sido modificados desde su creación sin autorización, asegurando que la información es válida y consistente), disponibilidad (capacidad de un sistema de información para garantizar que el este no va a sufrir caídas y que por tanto, el sistema y los datos van a  estar disponibles al usuario en todo momento.) o confidencialidad (capacidad de un sistema de información de garantizar que la información almacenada o transmitida por la red, solamente va a estar disponibles para aquellas personas autorizadas a la misma.).\cite{incibe},\cite{infosegur} 
+Una vulnerabilidad en términos informáticos es una debilidad o fallo en un sistema de información, como puede ser una aplicación o un servicio web, que permite a un atacante comprometer la integridad \footnote{Capacidad de un sistema para garantizar que los datos no han sido modificados desde su creación sin autorización, asegurando que la información es válida y consistente}, disponibilidad \footnote{Capacidad de un sistema para garantizar que este no va a sufrir caídas y que por tanto, el sistema y los datos van a estar disponibles al usuario en todo momento.} o confidencialidad \footnote{Capacidad de un sistema de garantizar que la información almacenada o transmitida por la red, solamente va a estar disponibles para aquellas personas autorizadas a la misma.} del mismo.
 
 \section{Vulnerabilidades y ataques más recurrentes:}
 
-\begin{enumerate}
-\item {\bfseries Vulnerabilidad Zero Day:}
-son aquellas vulnerabilidades que acaban de ser descubiertas, y que por tanto, no tienen un parche que las solucione.
-El principal problema de este tipo de vulnerabilidades es que desde que se descubre hasta que se lanza un parche correctivo y los usuarios lo instalan en sus equipos, los atacantes tienen vía libre para explotarla y sacar provecho de esta.
-Existen varios ejemplos de este tipo de vulnerabilidad, por ejemplo el ransomware(programa de software malicioso que llega a bloquear la pantalla de una computadora o cifrar archivos importantes con contraseña, tiene como objetivo el exigir un pago para restablecer el funcionamiento del sistema que contiene el mismo.) que afectó a multitud de equipos a partir del 2017.
-Algunas empresas importantes, para tratar de evitar este tipo de vulnerabilidades que suelen producirse a menudo en software recientemente desarrollado, es hacer concursos invitando a grandes  expertos en ciberseguridad, ofreciendo grandes recompensas a aquellos que descubran y resuelvan posibles vulnerabilidades que tenga dicho software.
+En primer, lugar tenemos las vulnerabilidades Zero Day, se denominan así porque son aquellas 
+vulnerabilidades que han sido descubiertas recientemente. El principal problema de este tipo de 
+vulnerabilidades es que desde que se descubre hasta que se lanza un parche correctivo y los 
+usuarios lo instalan en sus equipos, los atacantes tienen vía libre para explotarla y sacar provecho 
+de esta. 
 
-\item {\bfseries Error en la gestión de recursos:}
+Existen varios ejemplos de este tipo de vulnerabilidad, por ejemplo el ransomware que afectó a 
+multitud de equipos a partir del 2017. Algunas empresas importantes, para tratar de evitar este 
+tipo de vulnerabilidades que suelen producirse a menudo en software recientemente desarrollado, 
+es hacer concursos invitando a grandes  expertos en ciberseguridad, ofreciendo grandes recompensas 
+a aquellos que descubran y resuelvan posibles vulnerabilidades que tenga dicho software.
+
+Error en la gestión de recursos:
 Este tipo de vulnerabilidad ocurre cuando no se tiene un control acerca de la gestión de recursos que puede utilizar un sistema de información, permitiendo que este consuma un exceso de recursos afectando a la disponibilidad de estos.
 Un ejemplo típico de explotación de esta vulnerabilidad es el exigir constantemente recursos del sistema de información, cediendo la mayoría de estos a un único usuario, ralentizando o impidiendo el uso de esta al resto de usuarios.
 
-\item {\bfseries Validación de entrada:}
+Validación de entrada:
 Esta vulnerabilidad ocurre cuando no se tiene un control acerca de los datos que pueden entrar en el sistema de información.
 Entre los ataques que explotan esta vulnerabilidades nos encontramos con los ya conocidos SQL injection, que consiste en insertar código SQL malicioso en la base de datos de la víctima forzando a la base de datos a ejecutar dicha sentencia.
 Entre los daños principales que pueden llegar a causar este tipo de ataques nos encontramos con la destrucción de tablas o la extracción de información privada como contraseñas.
 
-\item {\bfseries Permisos, privilegios y/o control de acceso:}
+Permisos, privilegios y/o control de acceso:
 Esta vulnerabilidad ocurre cuando no se tiene un control acerca de los privilegios o permisos que se les dan a los usuarios.
 En varias ocasiones, las empresas han sufrido ataques ayudados o llevados a cabo por sus propios empleados causados de manera consentida o no.
 Si se les dan permisos a todos los empleados de la empresa por igual, podría ocurrir que algún empleado realizase acciones que causasen grandes daños irreversibles para la misma.
 Por ejemplo, algún empleado trabajando en bases de datos, podría sin querer eliminar algunos datos relevantes para la misma al introducir mal alguna instrucción.
 También ocurre frecuentemente que no todas las partes del sistema de información tienen el mismo nivel de ciberseguridad, por tanto, si se distribuye por igual los permisos o privilegios entre las diferentes partes de esta, será atacada por el punto más vulnerable.
 
-\item {\bfseries Vulnerabilidad de Cross Site Scripting(XSS): }
+Vulnerabilidad de Cross Site Scripting(XSS): 
 Esta vulnerabilidad sucede cuando es posible ejecutar scripts de lenguajes como JavaScript.
 Consiste en la suplantación de un sitio web verdadero por otro que no lo es, pero que a nivel visual es idéntico al original.
 El ataque más conocido que aprovecha esta vulnerabilidad es el denominado Phising, que consiste en la obtención de los datos de los usuarios introducidos por ellos mismos.
 Un ejemplo frecuente de este tipo de ataques, se da a través de los emails, al usuario le llega un correo con una URL[5] que tiene un nombre semejante al nombre de su banco, el usuario al abrir el link se encuentra con un aspecto idéntico al de su banco habitual, por lo que introduce los datos, seguidamente estos datos son almacenados por el creador de dicho ataque y le redirige a la página web oficial introduciéndole los datos aportados por el usuario, de esta manera el usuario no sospecha que pueda ser algún tipo de ataque, ya que todo parece haber resultado con normalidad.
-\end{enumerate}
 
 \section{Clasificación de vulnerabilidades según gravedad y dificultad de tratamiento:}
 
