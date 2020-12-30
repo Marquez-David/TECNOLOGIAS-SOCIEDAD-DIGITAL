@@ -501,7 +501,7 @@ La seguridad pasiva, no es lo contrario a la seguridad activa sino que es un com
 %-------------------------------------------PARTE 7------------------------------------------------------------------------------------
 \chapter{Sistemas utilizados para mantener la seguridad y la privacidad}
 \label{cha:tipos-sistemas}
-\cite{tiposseguridad}
+Debido a la gran cantidad amenazas que hay en las conexiones a internet,  la protección informática se ha convertido en un pilar fundamental para cualquier empresa\cite{tiposseguridad}. Dependiendo de la naturaleza del sistema, podemos clasificarlos en:
 \section{Sistemas hardware:}
 Consiste en aplicar impedimentos físicos y funciones de control como medida de prevención y contra medidas ante amenazas a recursos confidenciales, estos procedimientos son aplicados en equipos del hogar, oficinas y a servidores y cpds.
 \begin{enumerate}
@@ -509,21 +509,16 @@ Consiste en aplicar impedimentos físicos y funciones de control como medida de 
 Es usado para crear un único volumen lógico, el cual físicamente esté compuesto por varios discos físicos. Dependiendo de qué modo de RAID utilicemos, esto nos servirá para conseguir un volumen con mayor seguridad contra fallos de hardware de los discos que lo componen gracias al almacenamiento redundante de estos o para conseguir simplemente un volumen de capacidad mayor. Protegen la disponibilidad de la información.  Los modos de raid que ofrecen una mayor seguridad del dispositivo son:
 \begin{enumerate}
 \item {\bfseries RAID 1:}
-
-Para ello son necesarios al menos 2 discos de igual tamaño, se realiza una copia espejo es decir lo que de escribe en uno se copia en el otro permitiendo de esta forma que, aunque se produzca un fallo en uno de los 2 discos sigamos conservando la información en otro el disco.
-
+Para ello son necesarios al menos 2 discos de igual tamaño, se realiza una copia espejo es decir lo que de escribe en uno se copia en el otro permitiendo de esta forma que, aunque se produzca un fallo en uno de los 2 discos sigamos conservando la información en otro el disco.Se muestra un ejemplo de como quedarían distribuidos los datos en disco en la Figura \ref{img:raid1}.
+\item {\bfseries RAID 5:}
+En esta configuración necesitaremos mínimo 3 discos de la misma capacidad, la capacidad total de almacenamiento será la de todos los discos menos uno, es decir, dos y los datos se irán almacenando de forma parcialmente redundante permitiendo que, aunque suframos un fallo en uno de los discos, podamos seguir accediendo a toda la información. Este sistema es más eficiente que el RAID 1 debido a que en este solo tenemos la capacidad de almacenamiento de uno de los discos y en el RAID 5 tenemos la capacidad de dos, aunque la desventaja de este sistema es que requiere un disco más.Se muestra un ejemplo de como quedarían distribuidos los datos en disco en la Figura \ref{img:raid5}.
+\end{enumerate}
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=2in]{raid1.png}
   		   \caption{Volumen reflejado (RAID1) \cite{ddos}}
   		   \label{img:raid1}
 \end{figure}
-
-\item {\bfseries RAID 5:}
-
-En esta configuración necesitaremos mínimo 3 discos de la misma capacidad, la capacidad total de almacenamiento será la de todos los discos menos uno, es decir, dos y los datos se irán almacenando de forma parcialmente redundante permitiendo que, aunque suframos un fallo en uno de los discos, podamos seguir accediendo a toda la información. Este sistema es más eficiente que el RAID 1 debido a que en este solo tenemos la capacidad de almacenamiento de uno de los discos y en el RAID 5 tenemos la capacidad de dos, aunque la desventaja de este sistema es que requiere un disco más.
-\end{enumerate}
-
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=3in]{raid5.png}
@@ -540,38 +535,36 @@ Son dispositivos que ofrecen protección contra apagones o irregularidades en la
   		   \caption{ Sistemas de alimentación ininterrumpida \cite{sai2}}
   		   \label{img:SAIS}
 \end{figure}
-\item {\bfseries Firewall de hardware:}
 
+\item {\bfseries Firewall de hardware:}
 También conocido como cortafuegos se trata de un dispositivo que es capaz de bloquear comunicaciones no autorizadas, permitiendo las que si lo están. Los cortafuegos permiten una configuración para permitir y limitar el tráfico entre distintas redes o ámbitos de una red mediante un conjunto de reglas y normas. Sus principales características son el filtrado por aplicación, reglas de filtrado sobre el tráfico de entrada y salida de una red en una interfaz de red, filtrado de paquetes comprobando su MAC, IP o puerto destino y origen y almacenar el registro del filtrado de paquetes. También existe el firewall de software, la diferencia es que el cortafuegos de hardware se trata de un dispositivo dedicado únicamente como firewall y el de software no. Protegen la integridad de la información.  Las arquitecturas de cortafuegos más implementadas son:
 \begin{enumerate}
 \item {\bfseries Screening router:}
- Un router hace de frontera entre la red pública y la red privada, realizando la función de cortafuegos.
-
+ Un router hace de frontera entre la red pública y la red privada, realizando la función de cortafuegos.Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screening-router}.
+\item {\bfseries Dual Homed-Host:}
+Un servidor con al menos dos interfaces de red divide la red pública de la red privada y la función de firewall.Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:dual-homed-host}.
+\item {\bfseries Screened Host:}
+Se trata de la combinación de un router como frontera y un servidor proxy que realizará las tareas de filtrado.Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-host}.
+\item {\bfseries Screened-subnet:}
+Se crea una red intermedia entre la red externa y la red privada denominada DMZ o zona desmilitarizada en la que se localizan los servidores, teniendo un nivel de seguridad mayor en el cortafuegos de acceso a la red interna y uno menor en el cortafuegos hacia la red externa.Se muestra un ejemplo de como quedarían la topología de dicha arquitectura en la Figura \ref{img:screened-subnet}.
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{screening-router.png}
   		   \caption{Arquitectura screening router \cite{firewall}}
   		   \label{img:screening-router}
 \end{figure}
-
-\item {\bfseries Dual Homed-Host:}
-Un servidor con al menos dos interfaces de red divide la red pública de la red privada y la función de firewall.
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{dual-homed-host.png}
   		   \caption{Arquitectura dual homed host \cite{firewall}}
   		   \label{img:dual-homed-host}
 \end{figure}
-\item {\bfseries Screened Host:}
-Se trata de la combinación de un router como frontera y un servidor proxy que realizará las tareas de filtrado.
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{screened-host.png}
   		   \caption{Arquitectura screened host \cite{firewall}}
   		   \label{img:screened-host}
 \end{figure}
-\item {\bfseries Screened-subnet:}
-Se crea una red intermedia entre la red externa y la red privada denominada DMZ o zona desmilitarizada en la que se localizan los servidores, teniendo un nivel de seguridad mayor en el cortafuegos de acceso a la red interna y uno menor en el cortafuegos hacia la red externa.
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=5in]{screened-subnet.png}
@@ -629,19 +622,6 @@ Se trata de documentos digitales mediante los que una entidad certificadora aseg
 
 \nocite{xss2}
 \nocite{pri}
-
-%\nocite{informacion}
-%\nocite{proteccion}
-%\nocite{caracteristicasseguridad}
-%\nocite{activaypasiva}
-%\nocite{tiposseguridad}
-%\nocite{raid}
-%\nocite{sai}
-%\nocite{firewall}
-%\nocite{proxy}
-%\nocite{proxy2}
-%\nocite{antivirus}
-%\nocite{certificado}
 
 
 
