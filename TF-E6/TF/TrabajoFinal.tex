@@ -76,13 +76,13 @@ tecnología como medio en la amenaza, pero aportaremos otras perspectivas a la h
 
 
 %-------------------------------------------PARTE 2------------------------------------------------------------------------------------
-\chapter{Vulnerabilidades y ataques en los sistemas informáticos}
+\chapter{Vulnerabilidades en los sistemas informáticos}
 \label{cha:vulneravilidades-y-ataques}
 
 Una vulnerabilidad en términos informáticos es una debilidad o fallo en un sistema de información, como puede ser una aplicación o un servicio web, que permite a un atacante comprometer la integridad \footnote{Capacidad de un sistema para garantizar que los datos no han sido modificados desde su creación sin autorización, asegurando que la información es válida y consistente.}, disponibilidad \footnote{Capacidad de un sistema para garantizar que este no va a sufrir caídas y que por tanto, el sistema y los datos van a estar disponibles al usuario en todo momento.} o confidencialidad \footnote{Capacidad de un sistema de garantizar que la información almacenada o transmitida por la red, solamente va a estar disponibles para aquellas personas autorizadas a la misma.} del mismo.
 
 \section{Vulnerabilidades más recurrentes:}
-En este apartado veremos aquellas vulnerabilidades más frecuentes tanto en empresas como en usuarios individuales. La mayoría de vulnerabilidades descritas a continuación se corresponden con los ciberataques definidos en el Capítulo \ref{cha:ciberataques-y-consecuencias}.
+En este apartado veremos aquellas vulnerabilidades más frecuentes tanto en empresas como en usuarios individuales. La mayoría de vulnerabilidades descritas a continuación se corresponden con los ciberataques definidos en el Capítulo \ref{cha:ciberataques-y-consecuencias}.\cite{vulnerabilidades2}
 
 En primer lugar, tenemos las vulnerabilidades Zero Day, se denominan así porque son aquellas 
 vulnerabilidades que han sido descubiertas recientemente. El principal problema de este tipo de 
@@ -110,7 +110,7 @@ También ocurre frecuentemente que no todas las partes del sistema de informaci�
 \section{Clasificación de vulnerabilidades según gravedad y dificultad de tratamiento:}
 
 Es importante destacar que los ordenadores personales normalmente no sufren ataques pese a tener algún tipo de vulnerabilidad, ya que resulta complicado obtener información lo suficientemente valiosa como para pedir un rescate por esta, o este no puede ser igual de cuantioso que el exigido a una empresa.
-En el caso de las empresas, sin embargo, es común tener un área destinada específicamente destinada a la ciberseguridad, ya que se tratan con datos sensibles \footnote{Son aquellos datos que están sujetos a condiciones de tratamiento específicas dictadas por el RGPD} de gran valor.
+En el caso de las empresas, sin embargo, es común tener un área destinada específicamente destinada a la ciberseguridad, ya que se tratan con datos sensibles \footnote{Son aquellos datos que están sujetos a condiciones de tratamiento específicas dictadas por el RGPD \cite{comision_europea}} de gran valor. 
 
 \begin{enumerate}
 \item {\bfseries Gravedad baja: }
@@ -130,9 +130,9 @@ Este tipo de vulnerabilidades son imprescindibles que sean cubiertas por el equi
 \label{cha:sistemas-de-riesgo}
 Para determinar si un sistema informático es de riesgo, es necesario llevar a cabo un análisis de riesgo.
 
-\emph{El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo.\cite{wikip}}
+\emph{"El análisis de riesgos informáticos es un proceso que comprende la identificación de activos informáticos, sus vulnerabilidades y amenazas a los que se encuentran expuestos así como su probabilidad de ocurrencia y el impacto de las mismas, a fin de determinar los controles adecuados para aceptar, disminuir, transferir o evitar la ocurrencia del riesgo."\cite{wikip}}
         
-La evaluación de riesgo incluye las siguientes actividades y acciones:
+La evaluación de riesgo incluye las siguientes actividades y acciones\cite{gestion_activos}:
 \begin{enumerate}
 \item {\bfseries Identificación de los activos:}
 Este proceso busca identificar los activos de la empresa.
@@ -167,11 +167,11 @@ Esta metodología se considera mixta, ya que hace un análisis cualitativo y cua
 
 
 \section{Herramientas  para la evaluación de riesgos:}
-Las herramientas que se muestran a continuación sirven de apoyo a las metodologías para la consecución de su objetivo.
+Las herramientas que se muestran a continuación sirven de apoyo a las metodologías para la consecución de su objetivo. \cite{herramientas-evaluacion-riesgos}
 \begin{enumerate}
 
 \item {\bfseries Matriz de riesgo:}
-Su función más importante es mostrar de manera resumida los riesgos, su probabilidad  y sus posibles soluciones de manera visual en una tabla, esta herramienta no se encarga de obtener estos datos, solo mostrarlos de manera gráfica. El objetivo de esta matriz es obtener una idea general de los riesgos de la empresa y la posibilidad de que estos ocurran de manera visual.\\
+Su función más importante es mostrar de manera resumida los riesgos, su probabilidad  y sus posibles soluciones de manera visual en una tabla, esta herramienta no se encarga de obtener estos datos, solo mostrarlos de manera gráfica. El objetivo de esta matriz es obtener una idea general de los riesgos de la empresa y la posibilidad de que estos ocurran de manera visual.\cite{isot}
 \begin{figure}[tphb]
   		   \centering
      		   \includegraphics[width=7in]{matriz_de_riesgo.png}
@@ -252,14 +252,14 @@ no solo datos empresariales fundamentales, sino comprometer sitios web e interru
 
 Tanto si el motivo es el espionaje como el sabotaje, los ciberdelincuentes emplean distintos métodos de ataque, algunos ya mostrados en la Figura \ref{img:ciberataques}, como "spear-phishing", el ataque de inyección SQL, el filtro de scripts de sitios (XSS) o los ataques de fuerza bruta para obtener todo tipo de información. Una de las tácticas más perturbadoras utilizada en los ciberataques 
 es el ataque distribuido de denegación del servicio (DDoS), en el que se utilizan bots infectados para congestionar un sitio web o una aplicación web hasta el punto 
-de que los usuarios legítimos no pueden acceder a él, algo que cuesta a las empresas millones de dólares en ingresos, pérdida de productividad y daños en la reputación.\nocite{akamai}
+de que los usuarios legítimos no pueden acceder a él, algo que cuesta a las empresas millones de dólares en ingresos, pérdida de productividad y daños en la reputación.\cite{akamai}
 En este capítulo se mencionan algunos de los ciberataques más conocidos, así como su funcionamiento y las consecuencias de los mismos.
 
 \section{Malware}
 \label{sec:malware}
 
 La palabra malware viene del inglés, y es el resultado de la unión de las palabras malicious software(software malicioso). Se trata de un tipo de software o de aplicación que tiene como objetivo hacer daño al dispositivo en el que se ha conseguido alojar, instalar o infiltrar, ya sea un ordenador, un teléfono móvil… 
-Existen muchos tipos de malware, los troyanos, los gusanos, el spyware, el ransomware. Sin embargo, malware es el término principal que se emplea para hablar de todas esas amenazas informáticas. La forma de actuar de cada uno suele ser diferente, pero en común tienen el objetivo de dañar el equipo o a su usuario. A continuación, se enumeran los tipos de malware más conocidos:
+Existen muchos tipos de malware, los troyanos, los gusanos, el spyware, el ransomware. Sin embargo, malware es el término principal que se emplea para hablar de todas esas amenazas informáticas. La forma de actuar de cada uno suele ser diferente, pero en común tienen el objetivo de dañar el equipo o a su usuario.\cite{malware}. A continuación, se enumeran los tipos de malware más conocidos: 
 
 \begin{enumerate}
 
@@ -276,9 +276,9 @@ Este malware se oculta dentro de un programa legítimo o se disfraza de él para
 Al igual que el troyano, spyware se instala en el equipo mediante la interacción de una segunda aplicación que lo lanza, trabaja en segundo plano intentando no ser detectado para recolectar información sobre el usuario u organización dueña de un ordenador de forma no autorizada.
 
 \item {\bfseries Ransomware:}
-Se trata de un tipo de malware que secuestra los datos de cualquier dispositivo electrónico, bloqueándolos y pidiendo un rescate económico a cambio de recuperarlos.
+Se trata de un tipo de malware que secuestra los datos de cualquier dispositivo electrónico, bloqueándolos y pidiendo un rescate económico a cambio de recuperarlos. \cite{ransomware}
 
-\nocite{malware}
+
 
 \end{enumerate}
 
@@ -323,7 +323,7 @@ esta se coteja contra una base de datos y, si coincide, se otorga acceso al usua
 Los problemas surgen porque la mayoría de los formularios web no tienen forma de detener el ingreso de información adicional a través de consultas SQL. Así, los 
 cibercriminales pueden aprovechar esta vulneravilidad y utilizar los cuadros de entrada del formulario para enviar sus propias solicitudes a la base de datos. Esto 
 podría permitirles llevar a cabo una amplia gama de actividades maliciosas, desde el robo de datos confidenciales hasta la manipulación de la información de la base 
-de datos para sus propios fines.
+de datos para sus propios fines. \cite{sql_injection}
 
 \begin{figure}[tphb]
   		   \centering
@@ -345,7 +345,7 @@ objetivo no son empresas ni organizaciones sino usuarios individuales.
 
 La inyección de código, al igual que en el caso del SQL, consiste en intercalar pequeños programas o comandos en medio del texto que se escribe en ese recuadro, 
 pero ahora no será el servidor web, ni el sistema de gestión de la base de datos quienes ejecutarán ese código, como en el caso del SQL Injection, sino que ahora 
-con la vulnerabilidad XSS quien ejecutará ese código es el navegador del usuario víctima.
+con la vulnerabilidad XSS quien ejecutará ese código es el navegador del usuario víctima. \cite{xss2}
 
 \begin{figure}[tphb]
   		   \centering
@@ -412,7 +412,7 @@ incidentes de seguridad de la red. La mayoría de estos planes se centran en la 
 problemas como la detección de malware, el robo de datos y las interrupciones del servicio. Sin 
 embargo, cualquier ataque cibernético ya sea alguno de los mencionados en el Capítulo 
 \ref{cha:ciberataques-y-consecuencias} o cualquier otro, puede afectar a una organización a través 
-de sus funciones de múltiples maneras.
+de sus funciones de múltiples maneras. \cite{pri}
 
 Una vez que tenemos clara la necesidad de contar con un plan de respuesta ante ciberataques, el 
 siguiente paso es el de definir los distintos puntos que debe contemplar dicho documento, que ha de 
@@ -595,27 +595,6 @@ Es usada en la transmisión de mensajes telemáticos y en la gestión de documen
 Se trata de documentos digitales mediante los cuales una entidad certificadora asegura que una persona es quien dice ser mediante su clave pública. Protege la integridad y la confidencialidad de la información. \cite{certificado}
 
 \end{enumerate}
-
-
-% fin del trabajo
-
-\nocite{ransomware}
-\nocite{sql_injection}
-\nocite{vulnerabilidades}
-\nocite{vulnerabilidades2}
-\nocite{wikip}
-\nocite{comision_europea}
-\nocite{isot}
-\nocite{gestion_activos}
-\nocite{incibe2}
-\nocite{herramientas-evaluacion-riesgos}
-\nocite{bibdigital}
-\nocite{bibdigital}
-
-\nocite{xss2}
-\nocite{pri}
-
-
 
 
 %se incluye el archivo de biobliografia
