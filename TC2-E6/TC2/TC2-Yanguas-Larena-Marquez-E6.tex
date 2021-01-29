@@ -1,0 +1,53 @@
+\input{../Config/preamble-anteproyecto.tex} 
+\input{../Config/myconfig.tex}
+\input{../Config/postamble.tex} 
+
+\graphicspath{{../Book/figures/}}
+
+\title{Mujeres en las disciplinas STEM}
+\date{3 de Febrero de 2021}            
+\author{Tecnologías para la Sociedad Digital}
+
+\begin{document}
+
+\input{../Config/setlanguagedependentissues.tex}
+\maketitle
+\begin{description}                               
+  \ifthenelse{\equal{\mybooklanguage}{english}}   
+  {        
+  \item[Título en inglés:] \mybooktitleenglish   
+  }                                            
+  {                                           
+  }                                              
+\item[Equipo:] Equipo de trabajo número seis 
+\item[Autores:] Carlos Yanguas Durán, Alberto Larena Luengo, David Márquez Mínguez                 
+\item[\expandafter\makefirstuc\expandafter{\mybookTutorOrTutores}:] Jesús Alpuente Hermosilla, Juan Antonio Martínez Rojas      
+\end{description}      
+\setcounter{page}{1}
+
+
+\begin{center}
+ {\bfseries \Large Resumen}
+\end{center}
+
+Resumen......                      
+
+\section{Introducción}
+\label{sec:introduccion}
+
+Introduccion.......
+
+
+\section{Discusión}
+\label{sec:discusion}
+
+Discusion...
+
+\section{Conclusiones}
+\label{sec:conclusiones}
+Conclusiones.... \cite{AMI}.
+
+\input{../Book/biblio/bibliography.tex}          
+
+
+\end{document}
